@@ -1,12 +1,12 @@
 A piece of interactive fiction written using [twee2](https://dan-q.github.io/twee2/) and [snowman](https://github.com/klembot/snowman).
 
-> The sword meets your husband's neck with an abrupt jolt, the force almost wrenching it from your grip.
-
 The premise: a nation caught in civil war and famine as powerful religious blocs vie for control. A conflict that has dragged on for years. The towns are starving, the harvests failing, and mercenary companies roam and pillage the land.
 
 Every army is accompanied by a vast train of camp followers: sex workers, washerwomen, looters, all kinds of people who seek their survival through meeting the soldiers' needs. Most of them, women.
 
 In the misery of war, they form a rebellion.
+
+> The sword meets your husband's neck with an abrupt jolt, the force almost wrenching it from your grip.
 
 ## Content warnings
 This story deals with some pretty heavy themes. In the present draft, specific content warnings for individual passages have not yet been implemented. Please be aware this story contains:
