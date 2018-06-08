@@ -1,0 +1,28 @@
+::mainstyle [stylesheet]
+body {
+    font-family: "Linux Libertine", serif;
+    background-color: #111;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+a {
+    color: #F77;
+    text-decoration: none;
+    /*font-weight: bold;*/
+    border: 0;
+    cursor: pointer;
+}
+
+a:hover, .prompt:hover {
+    color: #F44;
+    text-shadow: 0 0 2px #F44;
+}

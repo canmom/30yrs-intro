@@ -1,0 +1,14 @@
+::StoryTitle
+30yrs - intro
+
+::Configuration [twee2]
+Twee2::build_config.story_format = 'Snowman'
+Twee2::build_config.story_ifid = 'fededa0d-8f39-41f3-855e-f9f9cc042709'
+
+::StoryIncludes
+scripts.tw2
+styles.tw2
+chapter1.tw2
+chapter2.tw2
+chapter3.tw2
+chapter4.tw2

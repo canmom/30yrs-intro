@@ -1,0 +1,217 @@
+::init
+## the beginning
+
+[[The sword meets your husband's neck with an abrupt jolt, the force almost wrenching it from your grip.->beheading]]
+
+<%window.story.state.linebyline($('#passage'))%>
+
+::beheading
+Thick blood wells from the wound and spatters down his sweat-soaked shirt.
+
+He can't scream, you notice - his windpipe is severed. Nothing but a sick wheezing sound comes out as he drops to his knees.
+
+[[You feel nothing.]]
+
+::You feel nothing.
+You pull the sword out, and the blood laps out to pool thickly on the floor.
+
+_He_ could have done it in one swing. But you are not a soldier.
+
+[[Not yet.]]
+
+::Not yet.
+Until a minute ago, you had killed only two people. Neither deserved it.
+
+The first time, you remember sharp, metallic fury, soon giving way to a guilt that has sat in your stomach like a stone ever since.
+
+He had been a client, and then he'd gotten violent, but, well.
+
+[[They do that.]]
+
+::They do that.
+The second time, [[you don't want to think about.]]
+
+::you don't want to think about.
+
+You lift the sword up for another swing. He won't be getting up, but it's not done.
+
+You have to [[do it right.]]
+
+::do it right.
+You raise the sword above your head, just as you've seen the soldiers do when they execute a deserter.
+
+The blood has not fully covered the polished metal. [[You see your own face.]]
+
+::You see your own face.
+The brand has still not healed, sharp red lines poking out through Sara's poultice.
+
+You see the traces of a beard regrowing on your ugly, mannish jaw.
+
+You remember your husband sneering about it.
+
+You turn the sword and your face [[flicks out of view.]]
+
+::flicks out of view.
+The soldiers are celebrating their victory outside, but you don't hear it. The air feels somehow quiet.
+
+You look back at the pitiful thing on the floor.
+
+Your husband's head lolls at an awkward angle.
+
+He's still trying to breathe, and pink frothy saliva mixes with the pooling blood.
+
+His arms - sinewy, tanned - flail in the blood and muck, and you remember the scent of him.
+
+[[But only distantly.]]
+
+::But only distantly.
+
+Your detachment is not the professional distance of an assassin.
+
+It's more like you're watching someone else do it - like you're watching a performing troupe, and not a good one.
+
+You take a deep breath and cut.
+
+This time, his spine snaps, and with a final flick, the last little bit of skin is severed.
+
+Your husband's head rolls across the floor, blood matting his beard.
+
+Somehow, you feel like [[laughing.]]
+
+::laughing.
+You do not laugh.
+
+You wipe the sword clean, with care. Back into the scabbard, hang it back on the armour stand.
+
+Hanging. You will certainly hang for this.
+
+Well, it was going to happen sooner or later. People like you don't get long lives.
+
+You sit down on the bed and stare at the body on the floor. [[The brand stings.]]
+
+::The brand stings.
+You take Sara's poultice out of the bag and apply it again. Can never use too much, she said. She'll be coming by soon.
+
+Soon...
+
+[[Where is she?]]
+
+::Where is she?
+You suddenly have the thought of one of the soldiers coming back to the tent before she does. What they'd do to you.
+
+Your husband was well-liked. He treated his men well.
+
+They knew what kind of wife he had, but, well, lots of the boys did that.
+
+If anything, taking you proved he was [[more of a man.]]
+
+::more of a man.
+Never mind. He's dead.
+
+The tent flap opens, and you [[flinch]] despite yourself.
+
+::flinch
+It's just Sara.
+
+She stops, and stares at the headless body... her eyes flick across the room, following the trail of blood, the head lying up against the wall of the tent.
+
+She stares at you - mouth open.
+
+She swallows.
+
+[["This is going to be a problem, babe."]]
+
+::"This is going to be a problem, babe."
+You nod, weakly. Suddenly you don't feel so distant.
+
+"Look, I know he deserved it, but... Saints, I'm sorry. If you had to do it, I understand."
+
+Sara walks to the bed and takes you in her arms.
+
+You want to tell her why, but honestly, you [[still don't feel ready to answer that]].
+
+::still don't feel ready to answer that
+Was it the branding?
+
+Neither Church would ever accept your 'marriage', but your husband had his ways to claim you. But somehow you feel like that wasn't it.
+
+Was it the sick feeling every time he touched you, the memories that you try to shy away from?
+
+No, you don't remember a time before that.
+
+Was it seeing a woman _like you_ sprinting away as the soldiers took the enemy camp, hearing the soldiers laugh as they discussed what they'd do with her?
+
+Was it the look in your husband's eyes when he turned to you a minute later?
+
+But how could it be? You have seen dozens of things like that since you fled the town to follow the armies. [[That's what soldiers do.]]
+
+::That's what soldiers do.
+It was time. You can't explain why, but it [[had to be time]].
+
+::had to be time
+You hold on to Sara, and cry. She's warm, and soft, and she holds onto you. If she's speaking... you don't listen.
+
+But not for too long. You wipe your tears on your sleeve. Take a deep, steadying breath.
+
+Sara's saying something... talking about hiding the body, hurling it into the latrine pit, the men would pass it off as the result of a drunken brawl...
+
+[["No."]]
+
+::"No."
+Sara stops, and stares at you.
+
+"Look." she says. "I know you don't feel like living. But, well, I can't lose you -"
+
+"We're doing it tonight."
+
+She hesitates. "Judith, love, it's just a fantasy. We couldn't..."
+
+[["Not one more of us."]]
+
+::"Not one more of us."
+Sara opens her mouth. Closes it. Opens it again.
+
+"This cannot continue." you say. "Not one more of us."
+
+Sara grimaces. "Look, I know what you're going through. I understand. None of this is right - but what can we do, this is an army-"
+
+"No, you 'look.'" Sara stops, affronted. You stand, walk across the room, pick up your husband's head. Hold it up dramatically.
+
+_Now_ [[you laugh.]]
+
+::you laugh.
+"Here is bold Captain Sam. The hero of Nine Riders' Bluff. Killed who knows how many men! They say he can't be stopped. And..."
+
+You drop your husband's head into the cooling blood with a soft splash, spattering it across your faces.
+
+"...he hurt a woman just a little too much, and now he's dead. How many men in this camp - in this nation - are just as cruel?"
+
+Sara sighs, and wipes her face with the sleeve of her dress.
+
+You wait until she looks up, and hold her gaze. "Is there anyone following this company who does not have cause to do the same?"
+
+"We're ready, Sara. Perhaps [[we've always been ready.]]"
+
+::we've always been ready.
+Sara stands up, and looks down at your husband's body. "Poison would be easier."
+
+"Maybe." you say. "But I... I want them to know. I want them to know who's killing them, and I want them to know why. I want them to go before the Saints with guilt and fear plain on their faces."
+
+"You realise, of course -" Sara tilts her head, looking at you sardonically. You gesture for her to say her piece. You've talked enough.
+
+"You know we're not talking about common men here. These are mercenaries! Their job is killing people, and the Saints know they've had practice! And us?"
+
+"We know how to fuck a man senseless, tend to his wounds, cook his meals, wash his clothes - [[but what do we know of killing!?]]"
+
+::but what do we know of killing!?
+The tent flap opens, and an armoured figure ducks in. Sara gets up with a start.
+
+You're expecting her, but even so, your heart skips a beat. She looks just like the soldiers.
+
+Prudence opens her helmet. "We're ready." she says. "We've taken the battery. When the cannons fire, it begins."
+
+"Prudence?" Sara stares at her. "You're part of this - absurd -"
+
+You interrupt. "Hey, Sara." She turns on you, a sarcastic quip already forming. "Help me get this on?" You lift your husband's breastplate off the stand.
+
+Sara slumps. "Saints be merciful." she murmurs. [["Why didn't you tell me?"->chapter2]]

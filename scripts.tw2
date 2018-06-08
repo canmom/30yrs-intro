@@ -1,0 +1,75 @@
+::jquerytweak [script]
+jQuery.fn.pop = [].pop;
+jQuery.fn.shift = [].shift;
+
+::linebyline [script]
+window.story.state.linebyline = (passage) => {
+    const lines = passage.children()
+    lines.css('opacity', '0')
+    let prompt = null
+
+    const showNextLine = () => {
+        prompt.contents().contents().unwrap()
+        lines.shift()
+        makePrompt()
+    }
+
+    const makePrompt = () => {
+        prompt = lines.first()
+        prompt.fadeTo('fast',1)
+        if (lines.length !== 1) {
+            prompt.wrapInner("<a id='prompt'></a>")
+            $('#prompt').on('click',showNextLine)
+        }
+    }
+
+    makePrompt()
+}
+
+::transitions [script]
+$('#passage').on('click', 'a[data-passage]', (e) => {
+    const destination = $(e.target).data('passage')
+        
+    $('#passage').fadeOut('fast', function() {
+        story.show(destination)
+        const tags = story.passage(destination).tags
+        
+    });
+    
+    e.stopPropagation();
+});
+
+$(document).on("showpassage:after", function(e, passage) {
+    $('#passage').curlies()
+    window.story.state.linebyline($('#passage'))
+    $('#passage').fadeIn('fast')
+})
+
+::smartquotes [script]
+$.fn.curlies = function( itemQuery ) {
+    function smarten(text) {
+        return text
+            /* opening singles */
+            .replace(/(^|[\s(\["])'/g, "$1‘")
+
+            /* closing singles & apostrophes */
+            .replace(/'/g, "’")
+
+            /* opening doubles */
+            .replace(/(^|[/\[(\u2018\s])"/g, "$1“")
+
+            /* closing doubles */
+            .replace(/"/g, "”")
+
+            /* em-dashes */
+            .replace(/--/g, "\u2014");
+    };
+
+    this.contents().each(function () {
+        if (this.nodeType == Node.ELEMENT_NODE) {
+            $(this).curlies()
+        } else if (this.nodeType == Node.TEXT_NODE) {
+            $(this).replaceWith(smarten($(this).text()))
+        }
+    })
+};
