@@ -30,7 +30,7 @@ She looks unreasonably pleased. "Oh, definitely long enough."
 
 You're not sure you believe her. "First, tell me who you really are."
 
-"Hmm. I do I owe you a bit of an explanation, dear. Well, [[here's the deal...]]"
+"Hmm. I do owe you a bit of an explanation, dear. Well, [[here's the deal...]]"
 
 ::here's the deal...
 "I need you to spread my name. When you win - and you _will_ win, with me here - when you kick the last of those sorry bastards into the ground, you say this:"
@@ -150,9 +150,14 @@ But first, [[a promise.]]
 ::a promise.
 Sara is shaking, staring at the carnage. You collapse against her, and drape a numb arm around her. She leans on you gratefully.
 
-You see other women running past with pails from the well. You'll leave them to it. One task left for you.
+You see other women running past with pails from the well. You'll leave them to it.
 
-"What happened?" Sara says. "I can't... it doesn't... how are you so calm?"
+You only have energy for one thing, and [[Enaree's request]] comes first.
+
+::Enaree's request
+You wanted to make a big production of it, give a speech. But right now... you're too exhausted.
+
+"What happened?" Sara is saying. "I can't... it doesn't... how are you so calm?"
 
 "Enaree." you say faintly. "Saint Enaree came to me. She wanted us to live."
 
@@ -165,8 +170,9 @@ Sara turns to you, looks you in the eyes, suddenly alert.
 
 Sara is rustling through her bags. She pulls out a book - looted from some church - and flips it open, then a long white quill, and last, a small vial of ink.
 
-You didn't know she was lettered.
+You didn't know she was [[lettered.]]
 
+::lettered.
 "Please." Sara says. "This is important. What did she say to you?"
 
 "She says... if we follow her, all will be held in common, there will be no more lords, no more merchants, no more men."
