@@ -14,9 +14,9 @@ It's strangely quiet.
 
 No shouting. No clashing swords, no drills, no muskets fired.
 
-[[You make breakfast like usual.]]
+[[You wander along the row of tents, in a daze.]]
 
-::You make breakfast like usual.
+::You wander along the row of tents, in a daze.
 The day before feels like a dream. The battle. Meeting Enaree.
 
 Is this what you wanted?
@@ -37,7 +37,7 @@ The holy woman, Dorothea, is slicing up chickens to stew for the midday dinner, 
 You give her a gentle squeeze. "For now... [[let's eat."]]
 
 ::let's eat."
-The soldiers' rations are richer than you're used to - more meat and cheese.
+The soldiers' rations are richer than you're used to eating - meat and cheese to lend strength to a man's arm.
 
 You wonder where they got this cheese. If the cheesemakers are even still alive.
 
@@ -57,12 +57,18 @@ You know better [[than to say anything.]]
 
 You know there is no answer that will satisfy her. But you don't look away from her gaze.
 
-You can't apologise either. It would be a lie.
+You can't apologise either. It would be a [[lie.]]
 
-Not receiving an answer, Sophie spits in your face. "You're not even a real woman. What gives you the right to kill on _our_ behalf?"
+::lie.
+Not receiving an answer, Sophie spits in your face.
 
-She jabs a finger in your face."We should put you in the dirt with the other men."
+"You walk among us like a woman, but you're not. You're something... horrible. You make men defile themselves, and women kill the men they love. What makes you hate everything good in the world?"
 
+You can't help but smile slightly. Oops. Sophie kicks you, hard.
+
+[["You should be the one on that pyre!"]]
+
+::"You should be the one on that pyre!"
 Prudence stands up. Rests a hand on her sword. Sophie backs away.
 
 [[You step between them.]]
@@ -76,12 +82,15 @@ Maybe she'll call your bluff.
 
 But no. "Is that all you dream of?" she says. "More killing? A life for a life until the whole nation is corpses?"
 
-You smile. "Then we agree. Enough blood has been shed [[on this ground."]]
+You lower the offered sword. "Then we agree. Enough blood has been shed [[on this ground."]]
 
 ::on this ground."
-You climb onto the bench. More women are gathering around. Some wear dresses, others dress like soldiers.
+You step up onto the bench. Sophie's rant has brought a lot of onlookers. Some wear dresses, others dress like soldiers.
 
-"Why did we fight? Why did we win? Was it for that - _revenge_?" You shake your head, looking around the assembled company.
+Well, you'd wanted to make [[a speech.]]
+
+::a speech.
+"Sisters, why did we fight? What did we win? Was it as Sophie said - _revenge_?" You shake your head, looking around the assembled company.
 
 [["No."->no2]]
 
@@ -90,25 +99,33 @@ You climb onto the bench. More women are gathering around. Some wear dresses, ot
 
 You hear whispers. "So it's true, then..." someone whispers. You wonder how they could doubt it.
 
-"I will tell you what I [[fought for."]]
+"Sisters, I will tell you what _I_ [[fought for."]]
 
 ::fought for."
 "I fought for an _ending_! To silence the cacophany of violence that's all we've ever known!"
 
-They're listening. Even though your words are heresy. Even though you're leading them onto the path of unforgiveable witchcraft.
+They're listening. Even though you're _defiled_, even as you lead them down the unforgiveable path of heresy.
 
-"We fought so that not one more woman will be raped, or muzzled, or labour for a man's pleasure. Not one more of us live at the mercy of mens' disgust and her own sisters' judgement."
+"We fought so that not one more woman will be raped, or muzzled, or labour for a man's pleasure. Not one more of us live at the mercy of mens' passing disgust and her own sisters' judgement."
+
+"We fought because this is not a world for us. We fought because have the potential to _build one_."
+
+There is a lot of shouting. You _think_ it's good shouting.
 
 [[You see the holy woman, Dorothea, step forward.]]
 
 ::You see the holy woman, Dorothea, step forward.
-"May I speak, sister?" Dorothea says, almost too quietly to hear. You smile gently, and step aside.
+"May I speak, sister?" Dorothea calls, almost too quietly to hear. You incline your head respectfully, and step aside.
 
 Inside, though, you're terrified. Dorothea could turn them against you in a second.
 
-"You know my calling." Dorothea holds up the icon of Saint Lily. "You know I place face and conscience above all things."
+The crowd hushes. "Sisters. I hope you will forgive another speech."
+
+You roll your eyes a little. Dorothea's like that.
+
+"You know my calling." Dorothea holds up the icon of Saint Lily. "You know I place faith and conscience above all things."
 
 "Please, then, listen to [[my tale."]]
 
 ::my tale."
-(To be continued...)
+""
