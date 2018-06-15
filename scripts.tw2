@@ -41,7 +41,9 @@ $('#passage').on('click', 'a[data-passage]', (e) => {
 
 $(document).on("showpassage:after", function(e, passage) {
     $('#passage').curlies()
-    window.story.state.linebyline($('#passage'))
+    if (!passage.passage.tags.includes("allatonce")) {
+        window.story.state.linebyline($('#passage'))
+    }
     $('#passage').fadeIn('fast')
 })
 

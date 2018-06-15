@@ -5,6 +5,16 @@
 Twee2::build_config.story_format = 'Snowman'
 Twee2::build_config.story_ifid = 'fededa0d-8f39-41f3-855e-f9f9cc042709'
 
+::SplashPage [allatonce]
+# Thirty Years
+
+*A fantasy of womens' insurrection at the dawn of capital.*
+
+1. [[the beginning->chapter1]]
+2. [[the massacre->chapter2]]
+3. [[the compact->chapter3]]
+4. [[the aftermath->chapter4]]
+
 ::StoryIncludes
 scripts.tw2
 styles.tw2

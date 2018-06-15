@@ -75,7 +75,9 @@ $('#passage').on('click', 'a[data-passage]', (e) => {
 
 $(document).on("showpassage:after", function(e, passage) {
     $('#passage').curlies()
-    window.story.state.linebyline($('#passage'))
+    if (!passage.passage.tags.includes("allatonce")) {
+        window.story.state.linebyline($('#passage'))
+    }
     $('#passage').fadeIn('fast')
 })
 $.fn.curlies = function( itemQuery ) {
@@ -105,35 +107,42 @@ $.fn.curlies = function( itemQuery ) {
         }
     })
 };
-</script><tw-passagedata pid="1" name="init" tags="" position="">## the beginning
+</script><tw-passagedata pid="1" name="SplashPage" tags="allatonce" position=""># Thirty Years
+
+*A fantasy of womens' insurrection at the dawn of capital.*
+
+1. [[the beginning-&gt;chapter1]]
+2. [[the massacre-&gt;chapter2]]
+3. [[the compact-&gt;chapter3]]
+4. [[the aftermath-&gt;chapter4]]</tw-passagedata><tw-passagedata pid="2" name="chapter1" tags="" position="">## the beginning
 
 [[The sword meets your husband's neck with an abrupt jolt, the force almost wrenching it from your grip.-&gt;beheading]]
 
-&lt;%window.story.state.linebyline($('#passage'))%&gt;</tw-passagedata><tw-passagedata pid="2" name="beheading" tags="" position="">Thick blood wells from the wound and spatters down his sweat-soaked shirt.
+&lt;%window.story.state.linebyline($('#passage'))%&gt;</tw-passagedata><tw-passagedata pid="3" name="beheading" tags="" position="">Thick blood wells from the wound and spatters down his sweat-soaked shirt.
 
 He can't scream, you notice - his windpipe is severed. Nothing but a sick wheezing sound comes out as he drops to his knees.
 
-[[You feel nothing.]]</tw-passagedata><tw-passagedata pid="3" name="You feel nothing." tags="" position="">You pull the sword out, and the blood laps out to pool thickly on the floor.
+[[You feel nothing.]]</tw-passagedata><tw-passagedata pid="4" name="You feel nothing." tags="" position="">You pull the sword out, and the blood laps out to pool thickly on the floor.
 
 _He_ could have done it in one swing. But you are not a soldier.
 
-[[Not yet.]]</tw-passagedata><tw-passagedata pid="4" name="Not yet." tags="" position="">Until a minute ago, you had killed only two people. Neither deserved it.
+[[Not yet.]]</tw-passagedata><tw-passagedata pid="5" name="Not yet." tags="" position="">Until a minute ago, you had killed only two people. Neither deserved it.
 
 The first time, you remember sharp, metallic fury, soon giving way to a guilt that has sat in your stomach like a stone ever since.
 
 He had been a client, and then he'd gotten violent, but, well.
 
-[[They do that.]]</tw-passagedata><tw-passagedata pid="5" name="They do that." tags="" position="">The second time, [[you don't want to think about.]]</tw-passagedata><tw-passagedata pid="6" name="you don't want to think about." tags="" position="">You lift the sword up for another swing. He won't be getting up, but it's not done.
+[[They do that.]]</tw-passagedata><tw-passagedata pid="6" name="They do that." tags="" position="">The second time, [[you don't want to think about.]]</tw-passagedata><tw-passagedata pid="7" name="you don't want to think about." tags="" position="">You lift the sword up for another swing. He won't be getting up, but it's not done.
 
-You have to [[do it right.]]</tw-passagedata><tw-passagedata pid="7" name="do it right." tags="" position="">You raise the sword above your head, just as you've seen the soldiers do when they execute a deserter.
+You have to [[do it right.]]</tw-passagedata><tw-passagedata pid="8" name="do it right." tags="" position="">You raise the sword above your head, just as you've seen the soldiers do when they execute a deserter.
 
-The blood has not fully covered the polished metal. [[You see your own face.]]</tw-passagedata><tw-passagedata pid="8" name="You see your own face." tags="" position="">The brand has still not healed, sharp red lines poking out through Sara's poultice.
+The blood has not fully covered the polished metal. [[You see your own face.]]</tw-passagedata><tw-passagedata pid="9" name="You see your own face." tags="" position="">The brand has still not healed, sharp red lines poking out through Sara's poultice.
 
 You see the traces of a beard regrowing on your ugly, mannish jaw.
 
 You remember your husband sneering about it.
 
-You turn the sword and your face [[flicks out of view.]]</tw-passagedata><tw-passagedata pid="9" name="flicks out of view." tags="" position="">The soldiers are celebrating their victory outside, but you don't hear it. The air feels somehow quiet.
+You turn the sword and your face [[flicks out of view.]]</tw-passagedata><tw-passagedata pid="10" name="flicks out of view." tags="" position="">The soldiers are celebrating their victory outside, but you don't hear it. The air feels somehow quiet.
 
 You look back at the pitiful thing on the floor.
 
@@ -143,7 +152,7 @@ He's still trying to breathe, and pink frothy saliva mixes with the pooling bloo
 
 His arms - sinewy, tanned - flail in the blood and muck, and you remember the scent of him.
 
-[[But only distantly.]]</tw-passagedata><tw-passagedata pid="10" name="But only distantly." tags="" position="">Your detachment is not the professional distance of an assassin.
+[[But only distantly.]]</tw-passagedata><tw-passagedata pid="11" name="But only distantly." tags="" position="">Your detachment is not the professional distance of an assassin.
 
 It's more like you're watching someone else do it - like you're watching a performing troupe, and not a good one.
 
@@ -153,7 +162,7 @@ This time, his spine snaps, and with a final flick, the last little bit of skin 
 
 Your husband's head rolls across the floor, blood matting his beard.
 
-Somehow, you feel like [[laughing.]]</tw-passagedata><tw-passagedata pid="11" name="laughing." tags="" position="">You do not laugh.
+Somehow, you feel like [[laughing.]]</tw-passagedata><tw-passagedata pid="12" name="laughing." tags="" position="">You do not laugh.
 
 You wipe the sword clean, with care. Back into the scabbard, hang it back on the armour stand.
 
@@ -161,19 +170,19 @@ Hanging. You will certainly hang for this.
 
 Well, it was going to happen sooner or later. People like you don't get long lives.
 
-You sit down on the bed and stare at the body on the floor. [[The brand stings.]]</tw-passagedata><tw-passagedata pid="12" name="The brand stings." tags="" position="">You take Sara's poultice out of the bag and apply it again. Can never use too much, she said. She'll be coming by soon.
+You sit down on the bed and stare at the body on the floor. [[The brand stings.]]</tw-passagedata><tw-passagedata pid="13" name="The brand stings." tags="" position="">You take Sara's poultice out of the bag and apply it again. Can never use too much, she said. She'll be coming by soon.
 
 Soon...
 
-[[Where is she?]]</tw-passagedata><tw-passagedata pid="13" name="Where is she?" tags="" position="">You suddenly have the thought of one of the soldiers coming back to the tent before she does. What they'd do to you.
+[[Where is she?]]</tw-passagedata><tw-passagedata pid="14" name="Where is she?" tags="" position="">You suddenly have the thought of one of the soldiers coming back to the tent before she does. What they'd do to you.
 
 Your husband was well-liked. He treated his men well.
 
 They knew what kind of wife he had, but, well, lots of the boys did that.
 
-If anything, taking you proved he was [[more of a man.]]</tw-passagedata><tw-passagedata pid="14" name="more of a man." tags="" position="">Never mind. He's dead.
+If anything, taking you proved he was [[more of a man.]]</tw-passagedata><tw-passagedata pid="15" name="more of a man." tags="" position="">Never mind. He's dead.
 
-The tent flap opens, and you [[flinch]] despite yourself.</tw-passagedata><tw-passagedata pid="15" name="flinch" tags="" position="">It's just Sara.
+The tent flap opens, and you [[flinch]] despite yourself.</tw-passagedata><tw-passagedata pid="16" name="flinch" tags="" position="">It's just Sara.
 
 She stops, and stares at the headless body... her eyes flick across the room, following the trail of blood, the head lying up against the wall of the tent.
 
@@ -181,13 +190,13 @@ She stares at you - mouth open.
 
 She swallows.
 
-[["This is going to be a problem, babe."]]</tw-passagedata><tw-passagedata pid="16" name="&quot;This is going to be a problem, babe.&quot;" tags="" position="">You nod, weakly. Suddenly you don't feel so distant.
+[["This is going to be a problem, babe."]]</tw-passagedata><tw-passagedata pid="17" name="&quot;This is going to be a problem, babe.&quot;" tags="" position="">You nod, weakly. Suddenly you don't feel so distant.
 
 "Look, I know he deserved it, but... Saints, I'm sorry. If you had to do it, I understand."
 
 Sara walks to the bed and takes you in her arms.
 
-You want to tell her why, but honestly, you [[still don't feel ready to answer that]].</tw-passagedata><tw-passagedata pid="17" name="still don't feel ready to answer that" tags="" position="">Was it the branding?
+You want to tell her why, but honestly, you [[still don't feel ready to answer that]].</tw-passagedata><tw-passagedata pid="18" name="still don't feel ready to answer that" tags="" position="">Was it the branding?
 
 Neither Church would ever accept your 'marriage', but your husband had his ways to claim you. But somehow you feel like that wasn't it.
 
@@ -199,13 +208,13 @@ Was it seeing a woman _like you_ sprinting away as the soldiers took the enemy c
 
 Was it the look in your husband's eyes when he turned to you a minute later?
 
-But how could it be? You have seen dozens of things like that since you fled the town to follow the armies. [[That's what soldiers do.]]</tw-passagedata><tw-passagedata pid="18" name="That's what soldiers do." tags="" position="">It was time. You can't explain why, but it [[had to be time]].</tw-passagedata><tw-passagedata pid="19" name="had to be time" tags="" position="">You hold on to Sara, and cry. She's warm, and soft, and she holds onto you. If she's speaking... you don't listen.
+But how could it be? You have seen dozens of things like that since you fled the town to follow the armies. [[That's what soldiers do.]]</tw-passagedata><tw-passagedata pid="19" name="That's what soldiers do." tags="" position="">It was time. You can't explain why, but it [[had to be time]].</tw-passagedata><tw-passagedata pid="20" name="had to be time" tags="" position="">You hold on to Sara, and cry. She's warm, and soft, and she holds onto you. If she's speaking... you don't listen.
 
 But not for too long. You wipe your tears on your sleeve. Take a deep, steadying breath.
 
 Sara's saying something... talking about hiding the body, hurling it into the latrine pit, the men would pass it off as the result of a drunken brawl...
 
-[["No."]]</tw-passagedata><tw-passagedata pid="20" name="&quot;No.&quot;" tags="" position="">Sara stops, and stares at you.
+[["No."]]</tw-passagedata><tw-passagedata pid="21" name="&quot;No.&quot;" tags="" position="">Sara stops, and stares at you.
 
 "Look." she says. "I know you don't feel like living. But, well, I can't lose you -"
 
@@ -213,7 +222,7 @@ Sara's saying something... talking about hiding the body, hurling it into the la
 
 She hesitates. "Judith, love, it's just a fantasy. We couldn't..."
 
-[["Not one more of us."]]</tw-passagedata><tw-passagedata pid="21" name="&quot;Not one more of us.&quot;" tags="" position="">Sara opens her mouth. Closes it. Opens it again.
+[["Not one more of us."]]</tw-passagedata><tw-passagedata pid="22" name="&quot;Not one more of us.&quot;" tags="" position="">Sara opens her mouth. Closes it. Opens it again.
 
 "This cannot continue." you say. "Not one more of us."
 
@@ -221,7 +230,7 @@ Sara grimaces. "Look, I know what you're going through. I understand. None of th
 
 "No, you 'look.'" Sara stops, affronted. You stand, walk across the room, pick up your husband's head. Hold it up dramatically.
 
-_Now_ [[you laugh.]]</tw-passagedata><tw-passagedata pid="22" name="you laugh." tags="" position="">"Here is bold Captain Sam. The hero of Nine Riders' Bluff. Killed who knows how many men! They say he can't be stopped. And..."
+_Now_ [[you laugh.]]</tw-passagedata><tw-passagedata pid="23" name="you laugh." tags="" position="">"Here is bold Captain Sam. The hero of Nine Riders' Bluff. Killed who knows how many men! They say he can't be stopped. And..."
 
 You drop your husband's head into the cooling blood with a soft splash, spattering it across your faces.
 
@@ -231,7 +240,7 @@ Sara sighs, and wipes her face with the sleeve of her dress.
 
 You wait until she looks up, and hold her gaze. "Is there anyone following this company who does not have cause to do the same?"
 
-"We're ready, Sara. Perhaps [[we've always been ready.]]"</tw-passagedata><tw-passagedata pid="23" name="we've always been ready." tags="" position="">Sara stands up, and looks down at your husband's body. "Poison would be easier."
+"We're ready, Sara. Perhaps [[we've always been ready.]]"</tw-passagedata><tw-passagedata pid="24" name="we've always been ready." tags="" position="">Sara stands up, and looks down at your husband's body. "Poison would be easier."
 
 "Maybe." you say. "But I... I want them to know. I want them to know who's killing them, and I want them to know why. I want them to go before the Saints with guilt and fear plain on their faces."
 
@@ -239,7 +248,7 @@ You wait until she looks up, and hold her gaze. "Is there anyone following this 
 
 "You know we're not talking about common men here. These are mercenaries! Their job is killing people, and the Saints know they've had practice! And us?"
 
-"We know how to fuck a man senseless, tend to his wounds, cook his meals, wash his clothes - [[but what do we know of killing!?]]"</tw-passagedata><tw-passagedata pid="24" name="but what do we know of killing!?" tags="" position="">The tent flap opens, and an armoured figure ducks in. Sara gets up with a start.
+"We know how to fuck a man senseless, tend to his wounds, cook his meals, wash his clothes - [[but what do we know of killing!?]]"</tw-passagedata><tw-passagedata pid="25" name="but what do we know of killing!?" tags="" position="">The tent flap opens, and an armoured figure ducks in. Sara gets up with a start.
 
 You're expecting her, but even so, your heart skips a beat. She looks just like the soldiers.
 
@@ -249,12 +258,12 @@ Prudence opens her helmet. "We're ready." she says. "We've taken the battery. Wh
 
 You interrupt. "Hey, Sara." She turns on you, a sarcastic quip already forming. "Help me get this on?" You lift your husband's breastplate off the stand.
 
-Sara slumps. "Saints be merciful." she murmurs. [["Why didn't you tell me?"-&gt;chapter2]]</tw-passagedata><tw-passagedata pid="25" name="chapter2" tags="" position="">## the massacre
+Sara slumps. "Saints be merciful." she murmurs. [["Why didn't you tell me?"-&gt;chapter2]]</tw-passagedata><tw-passagedata pid="26" name="chapter2" tags="" position="">## the massacre
 You have heard the cannons from far away on the battlefield, the sound rolling over the hills, undercutting the shouting of dying men.
 
 Never this close.
 
-For a single moment after, the camp is truly [[silent.]]</tw-passagedata><tw-passagedata pid="26" name="silent." tags="" position="">The fires catch quickly. The lookouts were alert for infiltrators - but the camp followers were beneath suspicion.
+For a single moment after, the camp is truly [[silent.]]</tw-passagedata><tw-passagedata pid="27" name="silent." tags="" position="">The fires catch quickly. The lookouts were alert for infiltrators - but the camp followers were beneath suspicion.
 
 You never told Sara your plan. Perhaps you should have?
 
@@ -262,23 +271,23 @@ But Sara's always been responsible.
 
 You don't think she'd tell the soldiers, but then... you don't know what she'd do.
 
-For now, matters of conscience are [[suspended.]]</tw-passagedata><tw-passagedata pid="27" name="suspended." tags="" position="">The soldiers are in disarray for now. If they band together...
+For now, matters of conscience are [[suspended.]]</tw-passagedata><tw-passagedata pid="28" name="suspended." tags="" position="">The soldiers are in disarray for now. If they band together...
 
-Best not to consider that. You have to rout them, now. [[Everything depends on it.]]</tw-passagedata><tw-passagedata pid="28" name="Everything depends on it." tags="" position="">You knew who to hit first. The leaders, the ones who command respect. Anyone who could rally them to defend.
+Best not to consider that. You have to rout them, now. [[Everything depends on it.]]</tw-passagedata><tw-passagedata pid="29" name="Everything depends on it." tags="" position="">You knew who to hit first. The leaders, the ones who command respect. Anyone who could rally them to defend.
 
 Some run to their tents... but their weapons and armour are missing, worn by the very 'enemy agents' laying waste to the camp.
 
-Not every woman was willing to fight. But many who wouldn't fight were happy to help. And the rest... [[knew better than to try to stop you.]]</tw-passagedata><tw-passagedata pid="29" name="knew better than to try to stop you." tags="" position="">You join the fray - and take in lungfuls of smoke--
+Not every woman was willing to fight. But many who wouldn't fight were happy to help. And the rest... [[knew better than to try to stop you.]]</tw-passagedata><tw-passagedata pid="30" name="knew better than to try to stop you." tags="" position="">You join the fray - and take in lungfuls of smoke--
 
 --idiot! Stay low, out of the smoke. Duck through the rushing bodies, ignore the screaming--
 
---and [[cut.]]</tw-passagedata><tw-passagedata pid="30" name="cut." tags="" position="">You remember your speech. You told your sisters that you could not guarantee victory.
+--and [[cut.]]</tw-passagedata><tw-passagedata pid="31" name="cut." tags="" position="">You remember your speech. You told your sisters that you could not guarantee victory.
 
 The men are trained, hardened by the long years of war. Many carry weapons even when they're not on the field.
 
 But these men have been fighting all day, and revelling into the evening. They're drunk, tired.
 
-In circumstances like these, a sharp piece of metal will [[make up the difference.]]</tw-passagedata><tw-passagedata pid="31" name="make up the difference." tags="" position="">One rushes you, shoves you to the ground--
+In circumstances like these, a sharp piece of metal will [[make up the difference.]]</tw-passagedata><tw-passagedata pid="32" name="make up the difference." tags="" position="">One rushes you, shoves you to the ground--
 
 you bring up your knee, hard, between his legs--
 
@@ -286,11 +295,11 @@ roll out from under him, force your sword between his ribs.
 
 You knew him. He was a regular (before your husband branded you). Paid well.
 
-Doesn't matter. Wrench the sword out. [[Look for the next one.]]</tw-passagedata><tw-passagedata pid="32" name="Look for the next one." tags="" position="">This guy's got a sword - taken it from the woman by his feet, raising it to finish her off.
+Doesn't matter. Wrench the sword out. [[Look for the next one.]]</tw-passagedata><tw-passagedata pid="33" name="Look for the next one." tags="" position="">This guy's got a sword - taken it from the woman by his feet, raising it to finish her off.
 
 His back is wide open. Cut his spine. Reach out a hand. Prudence takes it.
 
-[[Back to back.]]</tw-passagedata><tw-passagedata pid="33" name="Back to back." tags="" position="">In the close quarters of the camp, air thick with smoke, there is no question of formation, no massed pikes or volleys.
+[[Back to back.]]</tw-passagedata><tw-passagedata pid="34" name="Back to back." tags="" position="">In the close quarters of the camp, air thick with smoke, there is no question of formation, no massed pikes or volleys.
 
 Just bodies.
 
@@ -300,19 +309,19 @@ Your arms are numb. Your ears ring from the noise.
 
 Someone punches you in the stomach. You smash the pommel of your sword into his face, then collapse, puking.
 
-[[Whose blood even is this?]]</tw-passagedata><tw-passagedata pid="34" name="Whose blood even is this?" tags="" position="">You feel a boot press you down into the dirt.
+[[Whose blood even is this?]]</tw-passagedata><tw-passagedata pid="35" name="Whose blood even is this?" tags="" position="">You feel a boot press you down into the dirt.
 
 Rough hands tear your sword out of your stiff fingers.
 
 Well, you always knew it could go this way.
 
-[[You wait for the blow to land.]]</tw-passagedata><tw-passagedata pid="35" name="You wait for the blow to land." tags="" position="">The moment seems to stretch out into eternity.
+[[You wait for the blow to land.]]</tw-passagedata><tw-passagedata pid="36" name="You wait for the blow to land." tags="" position="">The moment seems to stretch out into eternity.
 
 You feel a buzzing at your ear.
 
-[["You made a good effort, love. I'm honestly impressed!"-&gt;goodeffort]]</tw-passagedata><tw-passagedata pid="36" name="goodeffort" tags="" position="">Somehow, you can tell it's a woman's voice. But more than that - a woman _like you_.
+[["You made a good effort, love. I'm honestly impressed!"-&gt;goodeffort]]</tw-passagedata><tw-passagedata pid="37" name="goodeffort" tags="" position="">Somehow, you can tell it's a woman's voice. But more than that - a woman _like you_.
 
-You can't twist to see her. You can't move at all. [[Is it her boot?]]</tw-passagedata><tw-passagedata pid="37" name="Is it her boot?" tags="" position="">"Now, sweetie. Let me explain. I am, what you might call... hmm. A Saint, yes? Yes, I think that is the word your people use."
+You can't twist to see her. You can't move at all. [[Is it her boot?]]</tw-passagedata><tw-passagedata pid="38" name="Is it her boot?" tags="" position="">"Now, sweetie. Let me explain. I am, what you might call... hmm. A Saint, yes? Yes, I think that is the word your people use."
 
 You stuggle to breathe. The 'Saint' appears to notice.
 
@@ -320,7 +329,7 @@ You stuggle to breathe. The 'Saint' appears to notice.
 
 You should be scared shitless. But somehow... calm. You wheeze out a reply.
 
-"A lot of people say that. If you want me to suck your cock, [[it'll be a shilling.]]"</tw-passagedata><tw-passagedata pid="38" name="it'll be a shilling." tags="" position="">The Saint laughs. Her voice sounds like bells.
+"A lot of people say that. If you want me to suck your cock, [[it'll be a shilling.]]"</tw-passagedata><tw-passagedata pid="39" name="it'll be a shilling." tags="" position="">The Saint laughs. Her voice sounds like bells.
 
 "Oh, that's not quite what I had in mind, but I do appreciate the offer. But no, dear. My needs are rather more political."
 
@@ -328,7 +337,7 @@ You should be scared shitless. But somehow... calm. You wheeze out a reply.
 
 You splutter on your own spit and someone else's blood, try to twist your head to speak again.
 
-[["Just kill this fucker standing on me!"]]</tw-passagedata><tw-passagedata pid="39" name="&quot;Just kill this fucker standing on me!&quot;" tags="" position="">The moment of stillness ends abruptly. The pressure releases.
+[["Just kill this fucker standing on me!"]]</tw-passagedata><tw-passagedata pid="40" name="&quot;Just kill this fucker standing on me!&quot;" tags="" position="">The moment of stillness ends abruptly. The pressure releases.
 
 You roll, take a ragged breath, stare up to see--
 
@@ -336,7 +345,7 @@ The man who was standing on you has risen into the air. He's clutching at his th
 
 There is a lull in the combat. People are staring.
 
-There is a soft music in the air. [[A song.]]</tw-passagedata><tw-passagedata pid="40" name="A song." tags="" position="">A trickle of blood rises out of his throat, not falling, spiralling upwards.
+There is a soft music in the air. [[A song.]]</tw-passagedata><tw-passagedata pid="41" name="A song." tags="" position="">A trickle of blood rises out of his throat, not falling, spiralling upwards.
 
 It becomes a thick rope, more and more, a coil of red fluid. The man grows paler, goes slack, his arms fall.
 
@@ -344,7 +353,7 @@ Someone makes the sign of Saint Lily. Another person retches.
 
 The last of the blood leaves the man's shrivelled, blue body.
 
-[[The song ends.]]</tw-passagedata><tw-passagedata pid="41" name="The song ends." tags="" position="">Man and blood fall at once.
+[[The song ends.]]</tw-passagedata><tw-passagedata pid="42" name="The song ends." tags="" position="">Man and blood fall at once.
 
 The man crashes down next to you, narrowly missing. His blood is less obliging. It mats your hair, soaks the floor around you.
 
@@ -352,11 +361,11 @@ Some of the people run. Some go straight back to fighting.
 
 And then--
 
-[[Another stop.]]</tw-passagedata><tw-passagedata pid="42" name="Another stop." tags="" position="">This time, you see her.
+[[Another stop.]]</tw-passagedata><tw-passagedata pid="43" name="Another stop." tags="" position="">This time, you see her.
 
 She's naked, and yes, she is _like you_. And she appears to be getting off on this.
 
-"Normally I don't [[exsanguinate]] for free. Aren't you special?"</tw-passagedata><tw-passagedata pid="43" name="exsanguinate" tags="" position="">You pull yourself slowly to your feet. The fighting bodies around you are frozen, like the frescoes at the Cathedral back home in Briston.
+"Normally I don't [[exsanguinate]] for free. Aren't you special?"</tw-passagedata><tw-passagedata pid="44" name="exsanguinate" tags="" position="">You pull yourself slowly to your feet. The fighting bodies around you are frozen, like the frescoes at the Cathedral back home in Briston.
 
 "I wasn't aware," you say, "that either Church had a Saint of... Exsanguination."
 
@@ -366,13 +375,13 @@ You stare at her. "For someone claiming to be a Saint, you don't seem to know a 
 
 "Dearie me." she grins, walking daintily over to you (you can't stop your eyes from going to her dick, and you're sure she notices).
 
-"You're awfully pedantic," she continues, "for someone [[whose life I just saved.]]"</tw-passagedata><tw-passagedata pid="44" name="whose life I just saved." tags="" position="">"Well." You don't really have an answer to that one.
+"You're awfully pedantic," she continues, "for someone [[whose life I just saved.]]"</tw-passagedata><tw-passagedata pid="45" name="whose life I just saved." tags="" position="">"Well." You don't really have an answer to that one.
 
 "I like it!" She reaches over and wipes some of the blood from your face. "You and I are going to do tremendous things."
 
 "Hmm." You look around the battlefield, the dead folk, the men and women cutting each other apart.
 
-[[It barely looks real.]]</tw-passagedata><tw-passagedata pid="45" name="It barely looks real." tags="" position="">The 'Saint' sighs. "Well, love, whether or not I qualify as a Saint, will you at least hear me out?"
+[[It barely looks real.]]</tw-passagedata><tw-passagedata pid="46" name="It barely looks real." tags="" position="">The 'Saint' sighs. "Well, love, whether or not I qualify as a Saint, will you at least hear me out?"
 
 "As you will." You walk over to a soldier who's mid fall, and give him a poke. He _feels_ like a statue, too.
 
@@ -380,7 +389,7 @@ You stare at her. "For someone claiming to be a Saint, you don't seem to know a 
 
 You grimace. "I suppose if a Saint says so, it must be true."
 
-"Now now." She picks up your sword where it's fallen, passes it to you. [["That's not an outcome I like very much, either."]]</tw-passagedata><tw-passagedata pid="46" name="&quot;That's not an outcome I like very much, either.&quot;" tags="" position="">You look at her, doubtfully. "If that's so, why don't you just _exsanguinate_ all these soldiers?"
+"Now now." She picks up your sword where it's fallen, passes it to you. [["That's not an outcome I like very much, either."]]</tw-passagedata><tw-passagedata pid="47" name="&quot;That's not an outcome I like very much, either.&quot;" tags="" position="">You look at her, doubtfully. "If that's so, why don't you just _exsanguinate_ all these soldiers?"
 
 She shakes her head. "It doesn't work like that, love. I am a mirror, not a lantern."
 
@@ -388,7 +397,7 @@ She shakes her head. "It doesn't work like that, love. I am a mirror, not a lant
 
 "Oh, you'll understand eventually." She sighs. "It's not easy to explain to mortals. In short, I need your help as much as you need mine."
 
-"Then why are you talking to me? One more doomed idiot on her way to mud?" The Saint opens her mouth, but you cut her off. "I'm sure the [[merchants, lords and kings]] would just love to have your help _exsanguinating_ people."</tw-passagedata><tw-passagedata pid="47" name="merchants, lords and kings" tags="" position="">The Saint grips your shoulders, suddenly staring you straight in the eyes.
+"Then why are you talking to me? One more doomed idiot on her way to mud?" The Saint opens her mouth, but you cut her off. "I'm sure the [[merchants, lords and kings]] would just love to have your help _exsanguinating_ people."</tw-passagedata><tw-passagedata pid="48" name="merchants, lords and kings" tags="" position="">The Saint grips your shoulders, suddenly staring you straight in the eyes.
 
 "Because, dear, merchants, lords and kings have an iron grip on history. That's exactly the problem."
 
@@ -400,15 +409,15 @@ The 'Saint' turns, and you notice she has a tail, coiling around her legs.
 
 She turns back to you.
 
-"You and I could change the course of history. _That_ is [[all I want.]]"</tw-passagedata><tw-passagedata pid="48" name="all I want." tags="" position="">"Well," and she actually blushes! "I also wouldn't mind if you sucked my cock, if [[the offer's still open."-&gt;chapter3]]</tw-passagedata><tw-passagedata pid="49" name="chapter3" tags="" position="">## the compact
+"You and I could change the course of history. _That_ is [[all I want.]]"</tw-passagedata><tw-passagedata pid="49" name="all I want." tags="" position="">"Well," and she actually blushes! "I also wouldn't mind if you sucked my cock, if [[the offer's still open."-&gt;chapter3]]</tw-passagedata><tw-passagedata pid="50" name="chapter3" tags="" position="">## the compact
 
 "Honestly? I'm fighting for my life here, you want to fuck?" Despite what you're saying, you can't help but admit you're tempted.
 
-[["Hey. Your idea."]] The 'Saint' laughs.</tw-passagedata><tw-passagedata pid="50" name="&quot;Hey. Your idea.&quot;" tags="" position="">In the Eastern Church, they say that the Saints bestow a kiss upon the faithful, allowing them to accomplish great things.
+[["Hey. Your idea."]] The 'Saint' laughs.</tw-passagedata><tw-passagedata pid="51" name="&quot;Hey. Your idea.&quot;" tags="" position="">In the Eastern Church, they say that the Saints bestow a kiss upon the faithful, allowing them to accomplish great things.
 
 The Western Church says this is arrant nonsense. The Saints are distant intermediaries, bearing humanity's words to the Angels - if they're worthy.
 
-[[Neither Church mentions sucking a Saint's cock.]]</tw-passagedata><tw-passagedata pid="51" name="Neither Church mentions sucking a Saint's cock." tags="" position="">"You're not really a Saint, are you?"
+[[Neither Church mentions sucking a Saint's cock.]]</tw-passagedata><tw-passagedata pid="52" name="Neither Church mentions sucking a Saint's cock." tags="" position="">"You're not really a Saint, are you?"
 
 You don't really need her to answer. There's no question she's a demon, of course.
 
@@ -416,13 +425,13 @@ She shrugs. "Does it matter?"
 
 Honestly? It does not. In the eyes of either Church, there is nobody lower than a _defiled man_ such as you.
 
-[[Not even a real woman.]]</tw-passagedata><tw-passagedata pid="52" name="Not even a real woman." tags="" position="">"I'm not saying no, but how long have we got?" you ask her.
+[[Not even a real woman.]]</tw-passagedata><tw-passagedata pid="53" name="Not even a real woman." tags="" position="">"I'm not saying no, but how long have we got?" you ask her.
 
 She looks unreasonably pleased. "Oh, definitely long enough."
 
 You're not sure you believe her. "First, tell me who you really are."
 
-"Hmm. I do owe you a bit of an explanation, dear. Well, [[here's the deal...]]"</tw-passagedata><tw-passagedata pid="53" name="here's the deal..." tags="" position="">"I need you to spread my name. When you win - and you _will_ win, with me here - when you kick the last of those sorry bastards into the ground, you say this:"
+"Hmm. I do owe you a bit of an explanation, dear. Well, [[here's the deal...]]"</tw-passagedata><tw-passagedata pid="54" name="here's the deal..." tags="" position="">"I need you to spread my name. When you win - and you _will_ win, with me here - when you kick the last of those sorry bastards into the ground, you say this:"
 
 "We do this in the name of Enaree. Saint Enaree, if you prefer."
 
@@ -430,7 +439,7 @@ You're not sure you believe her. "First, tell me who you really are."
 
 "Through Enaree, you can end the old order. Men will not rule women. Men will not rule men. The old society will end, and all will be held in common."
 
-"I trust you find this message [[agreeable."]]</tw-passagedata><tw-passagedata pid="54" name="agreeable.&quot;" tags="" position="">You're hardly in a place to disagree, and you tell her as much. She laughs.
+"I trust you find this message [[agreeable."]]</tw-passagedata><tw-passagedata pid="55" name="agreeable.&quot;" tags="" position="">You're hardly in a place to disagree, and you tell her as much. She laughs.
 
 "I will give you my blessing. Because I believe you will honour this." She hesitates.
 
@@ -440,7 +449,7 @@ Through the blood covering your face, it's hard to tell what her lips taste like
 
 She grins devilishly. How appropriate.
 
-[["We have a compact."]]</tw-passagedata><tw-passagedata pid="55" name="&quot;We have a compact.&quot;" tags="" position="">You're smiling too. Because honestly? You're hallucinating, or dead.
+[["We have a compact."]]</tw-passagedata><tw-passagedata pid="56" name="&quot;We have a compact.&quot;" tags="" position="">You're smiling too. Because honestly? You're hallucinating, or dead.
 
 Whatever this is... you might as well enjoy it.
 
@@ -450,7 +459,7 @@ Not a very comfortable support, but she doesn't seem to mind. You get down on yo
 
 You've tasted a lot of cocks but hers rates pretty highly, despite all the blood.
 
-You suppose it's quite a professional recommendation that even supernatural beings want [[your services.]]</tw-passagedata><tw-passagedata pid="56" name="your services." tags="" position="">When you've finished, she slides down into the muck. "Oh, love... that... mmm. I made the right choice..."
+You suppose it's quite a professional recommendation that even supernatural beings want [[your services.]]</tw-passagedata><tw-passagedata pid="57" name="your services." tags="" position="">When you've finished, she slides down into the muck. "Oh, love... that... mmm. I made the right choice..."
 
 Your mouth twists into a sardonic smile. "One shilling, I said."
 
@@ -458,17 +467,17 @@ Your mouth twists into a sardonic smile. "One shilling, I said."
 
 You wonder if the Churches would say having a demon suck your cock is better or worse than sucking hers, but decide it's probably about the same.
 
-It's been [[a while.]] Men are so very particular about _roles_.</tw-passagedata><tw-passagedata pid="57" name="a while." tags="" position="">It soon becomes apparent that she's had a lot of practice.
+It's been [[a while.]] Men are so very particular about _roles_.</tw-passagedata><tw-passagedata pid="58" name="a while." tags="" position="">It soon becomes apparent that she's had a lot of practice.
 
 With the root you've been taking, yours is less responsive. That's all right, though. You settle for cuddling on top of a dead horse.
 
-You look again at [[her face.]]</tw-passagedata><tw-passagedata pid="58" name="her face." tags="" position="">Demons, they say, are supernaturally beautiful, the better to lead honest folk astray.
+You look again at [[her face.]]</tw-passagedata><tw-passagedata pid="59" name="her face." tags="" position="">Demons, they say, are supernaturally beautiful, the better to lead honest folk astray.
 
 But honestly, she looks... ordinary. There's a trace of a scar at the top of her jaw - the telltale sign of the muzzling device that some soldiers have taken to using.
 
 Before you can ask, she sighs, and raises an arm to the frozen sun. It's faded, like smoke on the wind.
 
-"That was incredible, but I think we're out of time. I'll see you soon, [[sweetheart."]]</tw-passagedata><tw-passagedata pid="59" name="sweetheart.&quot;" tags="" position="">Time returns. The combatants begin to move once more. But... slowly.
+"That was incredible, but I think we're out of time. I'll see you soon, [[sweetheart."]]</tw-passagedata><tw-passagedata pid="60" name="sweetheart.&quot;" tags="" position="">Time returns. The combatants begin to move once more. But... slowly.
 
 The struggling bodies around you are clear. Easy to read.
 
@@ -476,7 +485,7 @@ Sara is in the open. A man is lunging for her, the point of his sword flying str
 
 You step forward. Swing - gently, it feels like. His sword bends absurdly, spins out of his hand, snapping his fingers back.
 
-Sara's pupils are just barely [[widening.]]</tw-passagedata><tw-passagedata pid="60" name="widening." tags="" position="">You reach out your hand, and take hers. Abruptly, she is moving normally.
+Sara's pupils are just barely [[widening.]]</tw-passagedata><tw-passagedata pid="61" name="widening." tags="" position="">You reach out your hand, and take hers. Abruptly, she is moving normally.
 
 She stares, for once at a loss for words.
 
@@ -486,7 +495,7 @@ You walk to the other women - those who've survived the night so far.
 
 You've given more than you've got. But Enaree was right. The battle was lost before it started.
 
-[[Had been lost.]]</tw-passagedata><tw-passagedata pid="61" name="Had been lost." tags="" position="">The soldiers, moving slowly, cannot resist.
+[[Had been lost.]]</tw-passagedata><tw-passagedata pid="62" name="Had been lost." tags="" position="">The soldiers, moving slowly, cannot resist.
 
 You find Prudence, sword locked with a snarling man in a feathered cap. You wrap your hand around hers.
 
@@ -496,7 +505,7 @@ Some of the women want to take advantage of the stillness to inflict pain, to ma
 
 Revenge is part of the story. But ultimately... that's not what you're here for.
 
-[[You're here to win your freedom.]]</tw-passagedata><tw-passagedata pid="62" name="You're here to win your freedom." tags="" position="">You can guess what it looked like from the soldiers' point of view.
+[[You're here to win your freedom.]]</tw-passagedata><tw-passagedata pid="63" name="You're here to win your freedom." tags="" position="">You can guess what it looked like from the soldiers' point of view.
 
 The bloody sacrifice of their comrade.
 
@@ -504,13 +513,13 @@ Their enemies disappearing in a blur.
 
 They would not have seen you kill them.
 
-When time returns, just a fraction survive. [[You let them run.]]</tw-passagedata><tw-passagedata pid="63" name="You let them run." tags="" position="">All of you are exhausted and stinking, soaked in sweat and blood, your clothes ruined. The armour will need cleaning, the fires putting out.
+When time returns, just a fraction survive. [[You let them run.]]</tw-passagedata><tw-passagedata pid="64" name="You let them run." tags="" position="">All of you are exhausted and stinking, soaked in sweat and blood, your clothes ruined. The armour will need cleaning, the fires putting out.
 
-But first, [[a promise.]]</tw-passagedata><tw-passagedata pid="64" name="a promise." tags="" position="">Sara is shaking, staring at the carnage. You collapse against her, and drape a numb arm around her. She leans on you gratefully.
+But first, [[a promise.]]</tw-passagedata><tw-passagedata pid="65" name="a promise." tags="" position="">Sara is shaking, staring at the carnage. You collapse against her, and drape a numb arm around her. She leans on you gratefully.
 
 You see other women running past with pails from the well. You'll leave them to it.
 
-You only have energy for one thing, and [[Enaree's request]] comes first.</tw-passagedata><tw-passagedata pid="65" name="Enaree's request" tags="" position="">You wanted to make a big production of it, give a speech. But right now... you're too exhausted.
+You only have energy for one thing, and [[Enaree's request]] comes first.</tw-passagedata><tw-passagedata pid="66" name="Enaree's request" tags="" position="">You wanted to make a big production of it, give a speech. But right now... you're too exhausted.
 
 "What happened?" Sara is saying. "I can't... it doesn't... how are you so calm?"
 
@@ -518,33 +527,33 @@ You only have energy for one thing, and [[Enaree's request]] comes first.</tw-pa
 
 Sara turns to you, looks you in the eyes, suddenly alert.
 
-[["Say that again."]]</tw-passagedata><tw-passagedata pid="66" name="&quot;Say that again.&quot;" tags="" position="">"A woman came to me, when we were fighting. She says... history. we have to make history."
+[["Say that again."]]</tw-passagedata><tw-passagedata pid="67" name="&quot;Say that again.&quot;" tags="" position="">"A woman came to me, when we were fighting. She says... history. we have to make history."
 
 Sara is rustling through her bags. She pulls out a book - looted from some church - and flips it open, then a long white quill, and last, a small vial of ink.
 
-You didn't know she was [[lettered.]]</tw-passagedata><tw-passagedata pid="67" name="lettered." tags="" position="">"Please." Sara says. "This is important. What did she say to you?"
+You didn't know she was [[lettered.]]</tw-passagedata><tw-passagedata pid="68" name="lettered." tags="" position="">"Please." Sara says. "This is important. What did she say to you?"
 
 "She says... if we follow her, all will be held in common, there will be no more lords, no more merchants, no more men."
 
 "We'll be free."
 
-Sara scrawls this [[over the neatly lettered page.]]</tw-passagedata><tw-passagedata pid="68" name="over the neatly lettered page." tags="" position="">[[You don't see much more after that.-&gt;chapter4]]</tw-passagedata><tw-passagedata pid="69" name="chapter4" tags="" position="">## the aftermath
+Sara scrawls this [[over the neatly lettered page.]]</tw-passagedata><tw-passagedata pid="69" name="over the neatly lettered page." tags="" position="">[[You don't see much more after that.-&gt;chapter4]]</tw-passagedata><tw-passagedata pid="70" name="chapter4" tags="" position="">## the aftermath
 
 Morning. Soft light through the thin walls of the tent.
 
 You turn over, mutter some placating thing for your husband. He's up early this morning...
 
-[[Oh.]]</tw-passagedata><tw-passagedata pid="70" name="Oh." tags="" position="">The camp is thick with smells. Smoke, in particular. Below that, blood. The first touch of rot.
+[[Oh.]]</tw-passagedata><tw-passagedata pid="71" name="Oh." tags="" position="">The camp is thick with smells. Smoke, in particular. Below that, blood. The first touch of rot.
 
 It's strangely quiet.
 
 No shouting. No clashing swords, no drills, no muskets fired.
 
-[[You wander along the row of tents, in a daze.]]</tw-passagedata><tw-passagedata pid="71" name="You wander along the row of tents, in a daze." tags="" position="">The day before feels like a dream. The battle. Meeting Enaree.
+[[You wander along the row of tents, in a daze.]]</tw-passagedata><tw-passagedata pid="72" name="You wander along the row of tents, in a daze." tags="" position="">The day before feels like a dream. The battle. Meeting Enaree.
 
 Is this what you wanted?
 
-[[Unquestionably.]]</tw-passagedata><tw-passagedata pid="72" name="Unquestionably." tags="" position="">You join the other women around the fire pit - where the men normally sit.
+[[Unquestionably.]]</tw-passagedata><tw-passagedata pid="73" name="Unquestionably." tags="" position="">You join the other women around the fire pit - where the men normally sit.
 
 Nobody is saying much.
 
@@ -554,29 +563,29 @@ The holy woman, Dorothea, is slicing up chickens to stew for the midday dinner, 
 
 "We're alive." Prudence still sounds surprised. "What are we going to do now?"
 
-You give her a gentle squeeze. "For now... [[let's eat."]]</tw-passagedata><tw-passagedata pid="73" name="let's eat.&quot;" tags="" position="">The soldiers' rations are richer than you're used to eating - meat and cheese to lend strength to a man's arm.
+You give her a gentle squeeze. "For now... [[let's eat."]]</tw-passagedata><tw-passagedata pid="74" name="let's eat.&quot;" tags="" position="">The soldiers' rations are richer than you're used to eating - meat and cheese to lend strength to a man's arm.
 
 You wonder where they got this cheese. If the cheesemakers are even still alive.
 
-But you'll need to be strong, now. You don't know how long, but your crimes are begging [[to be answered.]]</tw-passagedata><tw-passagedata pid="74" name="to be answered." tags="" position="">Someone is crying. You look over, not sure if the woman in question would appreciate you. You think her name is Sophie.
+But you'll need to be strong, now. You don't know how long, but your crimes are begging [[to be answered.]]</tw-passagedata><tw-passagedata pid="75" name="to be answered." tags="" position="">Someone is crying. You look over, not sure if the woman in question would appreciate you. You think her name is Sophie.
 
 She sees you looking, and marches over, furious tear streaking her ash-covered face.
 
 She stands over you. Opens her mouth. Closes it.
 
-You know better [[than to say anything.]]</tw-passagedata><tw-passagedata pid="75" name="than to say anything." tags="" position="">"Johann is dead." she says. "He was a good man. We were going to escape this hell, make a life together somewhere in the West. Why him?"
+You know better [[than to say anything.]]</tw-passagedata><tw-passagedata pid="76" name="than to say anything." tags="" position="">"Johann is dead." she says. "He was a good man. We were going to escape this hell, make a life together somewhere in the West. Why him?"
 
 You know there is no answer that will satisfy her. But you don't look away from her gaze.
 
-You can't apologise either. It would be a [[lie.]]</tw-passagedata><tw-passagedata pid="76" name="lie." tags="" position="">Not receiving an answer, Sophie spits in your face.
+You can't apologise either. It would be a [[lie.]]</tw-passagedata><tw-passagedata pid="77" name="lie." tags="" position="">Not receiving an answer, Sophie spits in your face.
 
 "You walk among us like a woman, but you're not. You're something... horrible. You make men defile themselves, and women kill the men they love. What makes you hate everything good in the world?"
 
 You can't help but smile slightly. Oops. Sophie kicks you, hard.
 
-[["You should be the one on that pyre!"]]</tw-passagedata><tw-passagedata pid="77" name="&quot;You should be the one on that pyre!&quot;" tags="" position="">Prudence stands up. Rests a hand on her sword. Sophie backs away.
+[["You should be the one on that pyre!"]]</tw-passagedata><tw-passagedata pid="78" name="&quot;You should be the one on that pyre!&quot;" tags="" position="">Prudence stands up. Rests a hand on her sword. Sophie backs away.
 
-[[You step between them.]]</tw-passagedata><tw-passagedata pid="78" name="You step between them." tags="" position="">"Here." You hold out your own sword to Sophie.
+[[You step between them.]]</tw-passagedata><tw-passagedata pid="79" name="You step between them." tags="" position="">"Here." You hold out your own sword to Sophie.
 
 Sophie stares. You stay standing there. "I agree. I am responsible for Johann's death. Kill me, if that's truly your wish. The Saints know I deserve it."
 
@@ -584,15 +593,15 @@ Maybe she'll call your bluff.
 
 But no. "Is that all you dream of?" she says. "More killing? A life for a life until the whole nation is corpses?"
 
-You lower the offered sword. "Then we agree. Enough blood has been shed [[on this ground."]]</tw-passagedata><tw-passagedata pid="79" name="on this ground.&quot;" tags="" position="">You step up onto the bench. Sophie's rant has brought a lot of onlookers. Some wear dresses, others dress like soldiers.
+You lower the offered sword. "Then we agree. Enough blood has been shed [[on this ground."]]</tw-passagedata><tw-passagedata pid="80" name="on this ground.&quot;" tags="" position="">You step up onto the bench. Sophie's rant has brought a lot of onlookers. Some wear dresses, others dress like soldiers.
 
-Well, you'd wanted to make [[a speech.]]</tw-passagedata><tw-passagedata pid="80" name="a speech." tags="" position="">"Sisters, why did we fight? What did we win? Was it as Sophie said - _revenge_?" You shake your head, looking around the assembled company.
+Well, you'd wanted to make [[a speech.]]</tw-passagedata><tw-passagedata pid="81" name="a speech." tags="" position="">"Sisters, why did we fight? What did we win? Was it as Sophie said - _revenge_?" You shake your head, looking around the assembled company.
 
-[["No."-&gt;no2]]</tw-passagedata><tw-passagedata pid="81" name="no2" tags="" position="">"Not for me, anyway. And not for Saint Enaree, whose blessing guided us to victory."
+[["No."-&gt;no2]]</tw-passagedata><tw-passagedata pid="82" name="no2" tags="" position="">"Not for me, anyway. And not for Saint Enaree, whose blessing guided us to victory."
 
 You hear whispers. "So it's true, then..." someone whispers. You wonder how they could doubt it.
 
-"Sisters, I will tell you what _I_ [[fought for."]]</tw-passagedata><tw-passagedata pid="82" name="fought for.&quot;" tags="" position="">"I fought for an _ending_! To silence the cacophany of violence that's all we've ever known!"
+"Sisters, I will tell you what _I_ [[fought for."]]</tw-passagedata><tw-passagedata pid="83" name="fought for.&quot;" tags="" position="">"I fought for an _ending_! To silence the cacophany of violence that's all we've ever known!"
 
 They're listening. Even though you're _defiled_, even as you lead them down the unforgiveable path of heresy.
 
@@ -602,7 +611,7 @@ They're listening. Even though you're _defiled_, even as you lead them down the 
 
 There is a lot of shouting. You _think_ it's good shouting.
 
-[[You see the holy woman, Dorothea, step forward.]]</tw-passagedata><tw-passagedata pid="83" name="You see the holy woman, Dorothea, step forward." tags="" position="">"May I speak, sister?" Dorothea calls, almost too quietly to hear. You incline your head respectfully, and step aside.
+[[You see the holy woman, Dorothea, step forward.]]</tw-passagedata><tw-passagedata pid="84" name="You see the holy woman, Dorothea, step forward." tags="" position="">"May I speak, sister?" Dorothea calls, almost too quietly to hear. You incline your head respectfully, and step aside.
 
 Inside, though, you're terrified. Dorothea could turn them against you in a second.
 
@@ -612,7 +621,7 @@ You roll your eyes a little. Dorothea's like that.
 
 "You know my calling." Dorothea holds up the icon of Saint Lily. "You know I place faith and conscience above all things."
 
-"Please, then, listen to [[my tale."]]</tw-passagedata><tw-passagedata pid="84" name="my tale.&quot;" tags="" position="">""</tw-passagedata></tw-storydata>
+"Please, then, listen to [[my tale."]]</tw-passagedata><tw-passagedata pid="85" name="my tale.&quot;" tags="" position="">""</tw-passagedata></tw-storydata>
 
 <script>(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 !function(e,t){"object"==typeof module&&"object"==typeof module.exports?module.exports=e.document?t(e,!0):function(e){if(!e.document)throw new Error("jQuery requires a window with a document");return t(e)}:t(e)}("undefined"!=typeof window?window:this,function(e,t){function n(e){var t=!!e&&"length"in e&&e.length,n=oe.type(e);return"function"===n||oe.isWindow(e)?!1:"array"===n||0===t||"number"==typeof t&&t>0&&t-1 in e}function r(e,t,n){if(oe.isFunction(t))return oe.grep(e,function(e,r){return!!t.call(e,r,e)!==n});if(t.nodeType)return oe.grep(e,function(e){return e===t!==n});if("string"==typeof t){if(ge.test(t))return oe.filter(t,e,n);t=oe.filter(t,e)}return oe.grep(e,function(e){return Z.call(t,e)>-1!==n})}function i(e,t){for(;(e=e[t])&&1!==e.nodeType;);return e}function o(e){var t={};return oe.each(e.match(we)||[],function(e,n){t[n]=!0}),t}function s(){G.removeEventListener("DOMContentLoaded",s),e.removeEventListener("load",s),oe.ready()}function a(){this.expando=oe.expando+a.uid++}function u(e,t,n){var r;if(void 0===n&&1===e.nodeType)if(r="data-"+t.replace(De,"-$&").toLowerCase(),n=e.getAttribute(r),"string"==typeof n){try{n="true"===n?!0:"false"===n?!1:"null"===n?null:+n+""===n?+n:Se.test(n)?oe.parseJSON(n):n}catch(i){}Ne.set(e,t,n)}else n=void 0;return n}function l(e,t,n,r){var i,o=1,s=20,a=r?function(){return r.cur()}:function(){return oe.css(e,t,"")},u=a(),l=n&&n[3]||(oe.cssNumber[t]?"":"px"),c=(oe.cssNumber[t]||"px"!==l&&+u)&&Ae.exec(oe.css(e,t));if(c&&c[3]!==l){l=l||c[3],n=n||[],c=+u||1;do o=o||".5",c/=o,oe.style(e,t,c+l);while(o!==(o=a()/u)&&1!==o&&--s)}return n&&(c=+c||+u||0,i=n[1]?c+(n[1]+1)*n[2]:+n[2],r&&(r.unit=l,r.start=c,r.end=i)),i}function c(e,t){var n="undefined"!=typeof e.getElementsByTagName?e.getElementsByTagName(t||"*"):"undefined"!=typeof e.querySelectorAll?e.querySelectorAll(t||"*"):[];return void 0===t||t&&oe.nodeName(e,t)?oe.merge([e],n):n}function f(e,t){for(var n=0,r=e.length;r>n;n++)Ee.set(e[n],"globalEval",!t||Ee.get(t[n],"globalEval"))}function p(e,t,n,r,i){for(var o,s,a,u,l,p,d=t.createDocumentFragment(),h=[],g=0,m=e.length;m>g;g++)if(o=e[g],o||0===o)if("object"===oe.type(o))oe.merge(h,o.nodeType?[o]:o);else if(Re.test(o)){for(s=s||d.appendChild(t.createElement("div")),a=(Oe.exec(o)||["",""])[1].toLowerCase(),u=Pe[a]||Pe._default,s.innerHTML=u[1]+oe.htmlPrefilter(o)+u[2],p=u[0];p--;)s=s.lastChild;oe.merge(h,s.childNodes),s=d.firstChild,s.textContent=""}else h.push(t.createTextNode(o));for(d.textContent="",g=0;o=h[g++];)if(r&&oe.inArray(o,r)>-1)i&&i.push(o);else if(l=oe.contains(o.ownerDocument,o),s=c(d.appendChild(o),"script"),l&&f(s),n)for(p=0;o=s[p++];)Fe.test(o.type||"")&&n.push(o);return d}function d(){return!0}function h(){return!1}function g(){try{return G.activeElement}catch(e){}}function m(e,t,n,r,i,o){var s,a;if("object"==typeof t){"string"!=typeof n&&(r=r||n,n=void 0);for(a in t)m(e,a,n,r,t[a],o);return e}if(null==r&&null==i?(i=n,r=n=void 0):null==i&&("string"==typeof n?(i=r,r=void 0):(i=r,r=n,n=void 0)),i===!1)i=h;else if(!i)return this;return 1===o&&(s=i,i=function(e){return oe().off(e),s.apply(this,arguments)},i.guid=s.guid||(s.guid=oe.guid++)),e.each(function(){oe.event.add(this,t,i,r,n)})}function v(e,t){return oe.nodeName(e,"table")&&oe.nodeName(11!==t.nodeType?t:t.firstChild,"tr")?e.getElementsByTagName("tbody")[0]||e:e}function y(e){return e.type=(null!==e.getAttribute("type"))+"/"+e.type,e}function x(e){var t=Xe.exec(e.type);return t?e.type=t[1]:e.removeAttribute("type"),e}function b(e,t){var n,r,i,o,s,a,u,l;if(1===t.nodeType){if(Ee.hasData(e)&&(o=Ee.access(e),s=Ee.set(t,o),l=o.events)){delete s.handle,s.events={};for(i in l)for(n=0,r=l[i].length;r>n;n++)oe.event.add(t,i,l[i][n])}Ne.hasData(e)&&(a=Ne.access(e),u=oe.extend({},a),Ne.set(t,u))}}function w(e,t){var n=t.nodeName.toLowerCase();"input"===n&&He.test(e.type)?t.checked=e.checked:("input"===n||"textarea"===n)&&(t.defaultValue=e.defaultValue)}function T(e,t,n,r){t=J.apply([],t);var i,o,s,a,u,l,f=0,d=e.length,h=d-1,g=t[0],m=oe.isFunction(g);if(m||d>1&&"string"==typeof g&&!re.checkClone&&_e.test(g))return e.each(function(i){var o=e.eq(i);m&&(t[0]=g.call(this,i,o.html())),T(o,t,n,r)});if(d&&(i=p(t,e[0].ownerDocument,!1,e,r),o=i.firstChild,1===i.childNodes.length&&(i=o),o||r)){for(s=oe.map(c(i,"script"),y),a=s.length;d>f;f++)u=i,f!==h&&(u=oe.clone(u,!0,!0),a&&oe.merge(s,c(u,"script"))),n.call(e[f],u,f);if(a)for(l=s[s.length-1].ownerDocument,oe.map(s,x),f=0;a>f;f++)u=s[f],Fe.test(u.type||"")&&!Ee.access(u,"globalEval")&&oe.contains(l,u)&&(u.src?oe._evalUrl&&oe._evalUrl(u.src):oe.globalEval(u.textContent.replace(ze,"")))}return e}function C(e,t,n){for(var r,i=t?oe.filter(t,e):e,o=0;null!=(r=i[o]);o++)n||1!==r.nodeType||oe.cleanData(c(r)),r.parentNode&&(n&&oe.contains(r.ownerDocument,r)&&f(c(r,"script")),r.parentNode.removeChild(r));return e}function k(e,t){var n=oe(t.createElement(e)).appendTo(t.body),r=oe.css(n[0],"display");return n.detach(),r}function E(e){var t=G,n=Ve[e];return n||(n=k(e,t),"none"!==n&&n||(Ue=(Ue||oe("<iframe frameborder='0' width='0' height='0'/>")).appendTo(t.documentElement),t=Ue[0].contentDocument,t.write(),t.close(),n=k(e,t),Ue.detach()),Ve[e]=n),n}function N(e,t,n){var r,i,o,s,a=e.style;return n=n||Qe(e),n&&(s=n.getPropertyValue(t)||n[t],""!==s||oe.contains(e.ownerDocument,e)||(s=oe.style(e,t)),!re.pixelMarginRight()&&Ge.test(s)&&Ye.test(t)&&(r=a.width,i=a.minWidth,o=a.maxWidth,a.minWidth=a.maxWidth=a.width=s,s=n.width,a.width=r,a.minWidth=i,a.maxWidth=o)),void 0!==s?s+"":s}function S(e,t){return{get:function(){return e()?void delete this.get:(this.get=t).apply(this,arguments)}}}function D(e){if(e in rt)return e;for(var t=e[0].toUpperCase()+e.slice(1),n=nt.length;n--;)if(e=nt[n]+t,e in rt)return e}function j(e,t,n){var r=Ae.exec(t);return r?Math.max(0,r[2]-(n||0))+(r[3]||"px"):t}function A(e,t,n,r,i){for(var o=n===(r?"border":"content")?4:"width"===t?1:0,s=0;4>o;o+=2)"margin"===n&&(s+=oe.css(e,n+Le[o],!0,i)),r?("content"===n&&(s-=oe.css(e,"padding"+Le[o],!0,i)),"margin"!==n&&(s-=oe.css(e,"border"+Le[o]+"Width",!0,i))):(s+=oe.css(e,"padding"+Le[o],!0,i),"padding"!==n&&(s+=oe.css(e,"border"+Le[o]+"Width",!0,i)));return s}function L(t,n,r){var i=!0,o="width"===n?t.offsetWidth:t.offsetHeight,s=Qe(t),a="border-box"===oe.css(t,"boxSizing",!1,s);if(G.msFullscreenElement&&e.top!==e&&t.getClientRects().length&&(o=Math.round(100*t.getBoundingClientRect()[n])),0>=o||null==o){if(o=N(t,n,s),(0>o||null==o)&&(o=t.style[n]),Ge.test(o))return o;i=a&&(re.boxSizingReliable()||o===t.style[n]),o=parseFloat(o)||0}return o+A(t,n,r||(a?"border":"content"),i,s)+"px"}function q(e,t){for(var n,r,i,o=[],s=0,a=e.length;a>s;s++)r=e[s],r.style&&(o[s]=Ee.get(r,"olddisplay"),n=r.style.display,t?(o[s]||"none"!==n||(r.style.display=""),""===r.style.display&&qe(r)&&(o[s]=Ee.access(r,"olddisplay",E(r.nodeName)))):(i=qe(r),"none"===n&&i||Ee.set(r,"olddisplay",i?n:oe.css(r,"display"))));for(s=0;a>s;s++)r=e[s],r.style&&(t&&"none"!==r.style.display&&""!==r.style.display||(r.style.display=t?o[s]||"":"none"));return e}function H(e,t,n,r,i){return new H.prototype.init(e,t,n,r,i)}function O(){return e.setTimeout(function(){it=void 0}),it=oe.now()}function F(e,t){var n,r=0,i={height:e};for(t=t?1:0;4>r;r+=2-t)n=Le[r],i["margin"+n]=i["padding"+n]=e;return t&&(i.opacity=i.width=e),i}function P(e,t,n){for(var r,i=(W.tweeners[t]||[]).concat(W.tweeners["*"]),o=0,s=i.length;s>o;o++)if(r=i[o].call(n,t,e))return r}function R(e,t,n){var r,i,o,s,a,u,l,c,f=this,p={},d=e.style,h=e.nodeType&&qe(e),g=Ee.get(e,"fxshow");n.queue||(a=oe._queueHooks(e,"fx"),null==a.unqueued&&(a.unqueued=0,u=a.empty.fire,a.empty.fire=function(){a.unqueued||u()}),a.unqueued++,f.always(function(){f.always(function(){a.unqueued--,oe.queue(e,"fx").length||a.empty.fire()})})),1===e.nodeType&&("height"in t||"width"in t)&&(n.overflow=[d.overflow,d.overflowX,d.overflowY],l=oe.css(e,"display"),c="none"===l?Ee.get(e,"olddisplay")||E(e.nodeName):l,"inline"===c&&"none"===oe.css(e,"float")&&(d.display="inline-block")),n.overflow&&(d.overflow="hidden",f.always(function(){d.overflow=n.overflow[0],d.overflowX=n.overflow[1],d.overflowY=n.overflow[2]}));for(r in t)if(i=t[r],st.exec(i)){if(delete t[r],o=o||"toggle"===i,i===(h?"hide":"show")){if("show"!==i||!g||void 0===g[r])continue;h=!0}p[r]=g&&g[r]||oe.style(e,r)}else l=void 0;if(oe.isEmptyObject(p))"inline"===("none"===l?E(e.nodeName):l)&&(d.display=l);else{g?"hidden"in g&&(h=g.hidden):g=Ee.access(e,"fxshow",{}),o&&(g.hidden=!h),h?oe(e).show():f.done(function(){oe(e).hide()}),f.done(function(){var t;Ee.remove(e,"fxshow");for(t in p)oe.style(e,t,p[t])});for(r in p)s=P(h?g[r]:0,r,f),r in g||(g[r]=s.start,h&&(s.end=s.start,s.start="width"===r||"height"===r?1:0))}}function M(e,t){var n,r,i,o,s;for(n in e)if(r=oe.camelCase(n),i=t[r],o=e[n],oe.isArray(o)&&(i=o[1],o=e[n]=o[0]),n!==r&&(e[r]=o,delete e[n]),s=oe.cssHooks[r],s&&"expand"in s){o=s.expand(o),delete e[r];for(n in o)n in e||(e[n]=o[n],t[n]=i)}else t[r]=i}function W(e,t,n){var r,i,o=0,s=W.prefilters.length,a=oe.Deferred().always(function(){delete u.elem}),u=function(){if(i)return!1;for(var t=it||O(),n=Math.max(0,l.startTime+l.duration-t),r=n/l.duration||0,o=1-r,s=0,u=l.tweens.length;u>s;s++)l.tweens[s].run(o);return a.notifyWith(e,[l,o,n]),1>o&&u?n:(a.resolveWith(e,[l]),!1)},l=a.promise({elem:e,props:oe.extend({},t),opts:oe.extend(!0,{specialEasing:{},easing:oe.easing._default},n),originalProperties:t,originalOptions:n,startTime:it||O(),duration:n.duration,tweens:[],createTween:function(t,n){var r=oe.Tween(e,l.opts,t,n,l.opts.specialEasing[t]||l.opts.easing);return l.tweens.push(r),r},stop:function(t){var n=0,r=t?l.tweens.length:0;if(i)return this;for(i=!0;r>n;n++)l.tweens[n].run(1);return t?(a.notifyWith(e,[l,1,0]),a.resolveWith(e,[l,t])):a.rejectWith(e,[l,t]),this}}),c=l.props;for(M(c,l.opts.specialEasing);s>o;o++)if(r=W.prefilters[o].call(l,e,c,l.opts))return oe.isFunction(r.stop)&&(oe._queueHooks(l.elem,l.opts.queue).stop=oe.proxy(r.stop,r)),r;return oe.map(c,P,l),oe.isFunction(l.opts.start)&&l.opts.start.call(e,l),oe.fx.timer(oe.extend(u,{elem:e,anim:l,queue:l.opts.queue})),l.progress(l.opts.progress).done(l.opts.done,l.opts.complete).fail(l.opts.fail).always(l.opts.always)}function I(e){return e.getAttribute&&e.getAttribute("class")||""}function $(e){return function(t,n){"string"!=typeof t&&(n=t,t="*");var r,i=0,o=t.toLowerCase().match(we)||[];if(oe.isFunction(n))for(;r=o[i++];)"+"===r[0]?(r=r.slice(1)||"*",(e[r]=e[r]||[]).unshift(n)):(e[r]=e[r]||[]).push(n)}}function B(e,t,n,r){function i(a){var u;return o[a]=!0,oe.each(e[a]||[],function(e,a){var l=a(t,n,r);return"string"!=typeof l||s||o[l]?s?!(u=l):void 0:(t.dataTypes.unshift(l),i(l),!1)}),u}var o={},s=e===Et;return i(t.dataTypes[0])||!o["*"]&&i("*")}function _(e,t){var n,r,i=oe.ajaxSettings.flatOptions||{};for(n in t)void 0!==t[n]&&((i[n]?e:r||(r={}))[n]=t[n]);return r&&oe.extend(!0,e,r),e}function X(e,t,n){for(var r,i,o,s,a=e.contents,u=e.dataTypes;"*"===u[0];)u.shift(),void 0===r&&(r=e.mimeType||t.getResponseHeader("Content-Type"));if(r)for(i in a)if(a[i]&&a[i].test(r)){u.unshift(i);break}if(u[0]in n)o=u[0];else{for(i in n){if(!u[0]||e.converters[i+" "+u[0]]){o=i;break}s||(s=i)}o=o||s}return o?(o!==u[0]&&u.unshift(o),n[o]):void 0}function z(e,t,n,r){var i,o,s,a,u,l={},c=e.dataTypes.slice();if(c[1])for(s in e.converters)l[s.toLowerCase()]=e.converters[s];for(o=c.shift();o;)if(e.responseFields[o]&&(n[e.responseFields[o]]=t),!u&&r&&e.dataFilter&&(t=e.dataFilter(t,e.dataType)),u=o,o=c.shift())if("*"===o)o=u;else if("*"!==u&&u!==o){if(s=l[u+" "+o]||l["* "+o],!s)for(i in l)if(a=i.split(" "),a[1]===o&&(s=l[u+" "+a[0]]||l["* "+a[0]])){s===!0?s=l[i]:l[i]!==!0&&(o=a[0],c.unshift(a[1]));break}if(s!==!0)if(s&&e["throws"])t=s(t);else try{t=s(t)}catch(f){return{state:"parsererror",error:s?f:"No conversion from "+u+" to "+o}}}return{state:"success",data:t}}function U(e,t,n,r){var i;if(oe.isArray(t))oe.each(t,function(t,i){n||jt.test(e)?r(e,i):U(e+"["+("object"==typeof i&&null!=i?t:"")+"]",i,n,r)});else if(n||"object"!==oe.type(t))r(e,t);else for(i in t)U(e+"["+i+"]",t[i],n,r)}function V(e){return oe.isWindow(e)?e:9===e.nodeType&&e.defaultView}var Y=[],G=e.document,Q=Y.slice,J=Y.concat,K=Y.push,Z=Y.indexOf,ee={},te=ee.toString,ne=ee.hasOwnProperty,re={},ie="2.2.0",oe=function(e,t){return new oe.fn.init(e,t)},se=/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g,ae=/^-ms-/,ue=/-([\da-z])/gi,le=function(e,t){return t.toUpperCase()};oe.fn=oe.prototype={jquery:ie,constructor:oe,selector:"",length:0,toArray:function(){return Q.call(this)},get:function(e){return null!=e?0>e?this[e+this.length]:this[e]:Q.call(this)},pushStack:function(e){var t=oe.merge(this.constructor(),e);return t.prevObject=this,t.context=this.context,t},each:function(e){return oe.each(this,e)},map:function(e){return this.pushStack(oe.map(this,function(t,n){return e.call(t,n,t)}))},slice:function(){return this.pushStack(Q.apply(this,arguments))},first:function(){return this.eq(0)},last:function(){return this.eq(-1)},eq:function(e){var t=this.length,n=+e+(0>e?t:0);return this.pushStack(n>=0&&t>n?[this[n]]:[])},end:function(){return this.prevObject||this.constructor()},push:K,sort:Y.sort,splice:Y.splice},oe.extend=oe.fn.extend=function(){var e,t,n,r,i,o,s=arguments[0]||{},a=1,u=arguments.length,l=!1;for("boolean"==typeof s&&(l=s,s=arguments[a]||{},a++),"object"==typeof s||oe.isFunction(s)||(s={}),a===u&&(s=this,a--);u>a;a++)if(null!=(e=arguments[a]))for(t in e)n=s[t],r=e[t],s!==r&&(l&&r&&(oe.isPlainObject(r)||(i=oe.isArray(r)))?(i?(i=!1,o=n&&oe.isArray(n)?n:[]):o=n&&oe.isPlainObject(n)?n:{},s[t]=oe.extend(l,o,r)):void 0!==r&&(s[t]=r));return s},oe.extend({expando:"jQuery"+(ie+Math.random()).replace(/\D/g,""),isReady:!0,error:function(e){throw new Error(e)},noop:function(){},isFunction:function(e){return"function"===oe.type(e)},isArray:Array.isArray,isWindow:function(e){return null!=e&&e===e.window},isNumeric:function(e){var t=e&&e.toString();return!oe.isArray(e)&&t-parseFloat(t)+1>=0},isPlainObject:function(e){return"object"!==oe.type(e)||e.nodeType||oe.isWindow(e)?!1:e.constructor&&!ne.call(e.constructor.prototype,"isPrototypeOf")?!1:!0},isEmptyObject:function(e){var t;for(t in e)return!1;return!0},type:function(e){return null==e?e+"":"object"==typeof e||"function"==typeof e?ee[te.call(e)]||"object":typeof e},globalEval:function(e){var t,n=eval;e=oe.trim(e),e&&(1===e.indexOf("use strict")?(t=G.createElement("script"),t.text=e,G.head.appendChild(t).parentNode.removeChild(t)):n(e))},camelCase:function(e){return e.replace(ae,"ms-").replace(ue,le)},nodeName:function(e,t){return e.nodeName&&e.nodeName.toLowerCase()===t.toLowerCase()},each:function(e,t){var r,i=0;if(n(e))for(r=e.length;r>i&&t.call(e[i],i,e[i])!==!1;i++);else for(i in e)if(t.call(e[i],i,e[i])===!1)break;return e},trim:function(e){return null==e?"":(e+"").replace(se,"")},makeArray:function(e,t){var r=t||[];return null!=e&&(n(Object(e))?oe.merge(r,"string"==typeof e?[e]:e):K.call(r,e)),r},inArray:function(e,t,n){return null==t?-1:Z.call(t,e,n)},merge:function(e,t){for(var n=+t.length,r=0,i=e.length;n>r;r++)e[i++]=t[r];return e.length=i,e},grep:function(e,t,n){for(var r,i=[],o=0,s=e.length,a=!n;s>o;o++)r=!t(e[o],o),r!==a&&i.push(e[o]);return i},map:function(e,t,r){var i,o,s=0,a=[];if(n(e))for(i=e.length;i>s;s++)o=t(e[s],s,r),null!=o&&a.push(o);else for(s in e)o=t(e[s],s,r),null!=o&&a.push(o);return J.apply([],a)},guid:1,proxy:function(e,t){var n,r,i;return"string"==typeof t&&(n=e[t],t=e,e=n),oe.isFunction(e)?(r=Q.call(arguments,2),i=function(){return e.apply(t||this,r.concat(Q.call(arguments)))},i.guid=e.guid=e.guid||oe.guid++,i):void 0},now:Date.now,support:re}),"function"==typeof Symbol&&(oe.fn[Symbol.iterator]=Y[Symbol.iterator]),oe.each("Boolean Number String Function Array Date RegExp Object Error Symbol".split(" "),function(e,t){ee["[object "+t+"]"]=t.toLowerCase()});var ce=function(e){function t(e,t,n,r){var i,o,s,a,u,l,f,d,h=t&&t.ownerDocument,g=t?t.nodeType:9;if(n=n||[],"string"!=typeof e||!e||1!==g&&9!==g&&11!==g)return n;if(!r&&((t?t.ownerDocument||t:I)!==q&&L(t),t=t||q,O)){if(11!==g&&(l=ve.exec(e)))if(i=l[1]){if(9===g){if(!(s=t.getElementById(i)))return n;if(s.id===i)return n.push(s),n}else if(h&&(s=h.getElementById(i))&&M(t,s)&&s.id===i)return n.push(s),n}else{if(l[2])return K.apply(n,t.getElementsByTagName(e)),n;if((i=l[3])&&w.getElementsByClassName&&t.getElementsByClassName)return K.apply(n,t.getElementsByClassName(i)),n}if(w.qsa&&!z[e+" "]&&(!F||!F.test(e))){if(1!==g)h=t,d=e;else if("object"!==t.nodeName.toLowerCase()){for((a=t.getAttribute("id"))?a=a.replace(xe,"\\$&"):t.setAttribute("id",a=W),f=E(e),o=f.length,u=pe.test(a)?"#"+a:"[id='"+a+"']";o--;)f[o]=u+" "+p(f[o]);d=f.join(","),h=ye.test(e)&&c(t.parentNode)||t}if(d)try{return K.apply(n,h.querySelectorAll(d)),n}catch(m){}finally{a===W&&t.removeAttribute("id")}}}return S(e.replace(ae,"$1"),t,n,r)}function n(){function e(n,r){return t.push(n+" ")>T.cacheLength&&delete e[t.shift()],e[n+" "]=r}var t=[];return e}function r(e){return e[W]=!0,e}function i(e){var t=q.createElement("div");try{return!!e(t)}catch(n){return!1}finally{t.parentNode&&t.parentNode.removeChild(t),t=null}}function o(e,t){for(var n=e.split("|"),r=n.length;r--;)T.attrHandle[n[r]]=t}function s(e,t){var n=t&&e,r=n&&1===e.nodeType&&1===t.nodeType&&(~t.sourceIndex||V)-(~e.sourceIndex||V);if(r)return r;if(n)for(;n=n.nextSibling;)if(n===t)return-1;return e?1:-1}function a(e){return function(t){var n=t.nodeName.toLowerCase();return"input"===n&&t.type===e}}function u(e){return function(t){var n=t.nodeName.toLowerCase();return("input"===n||"button"===n)&&t.type===e}}function l(e){return r(function(t){return t=+t,r(function(n,r){for(var i,o=e([],n.length,t),s=o.length;s--;)n[i=o[s]]&&(n[i]=!(r[i]=n[i]))})})}function c(e){return e&&"undefined"!=typeof e.getElementsByTagName&&e}function f(){}function p(e){for(var t=0,n=e.length,r="";n>t;t++)r+=e[t].value;return r}function d(e,t,n){var r=t.dir,i=n&&"parentNode"===r,o=B++;return t.first?function(t,n,o){for(;t=t[r];)if(1===t.nodeType||i)return e(t,n,o)}:function(t,n,s){var a,u,l,c=[$,o];if(s){for(;t=t[r];)if((1===t.nodeType||i)&&e(t,n,s))return!0}else for(;t=t[r];)if(1===t.nodeType||i){if(l=t[W]||(t[W]={}),u=l[t.uniqueID]||(l[t.uniqueID]={}),(a=u[r])&&a[0]===$&&a[1]===o)return c[2]=a[2];if(u[r]=c,c[2]=e(t,n,s))return!0}}}function h(e){return e.length>1?function(t,n,r){for(var i=e.length;i--;)if(!e[i](t,n,r))return!1;return!0}:e[0]}function g(e,n,r){for(var i=0,o=n.length;o>i;i++)t(e,n[i],r);return r}function m(e,t,n,r,i){for(var o,s=[],a=0,u=e.length,l=null!=t;u>a;a++)(o=e[a])&&(!n||n(o,r,i))&&(s.push(o),l&&t.push(a));return s}function v(e,t,n,i,o,s){return i&&!i[W]&&(i=v(i)),o&&!o[W]&&(o=v(o,s)),r(function(r,s,a,u){var l,c,f,p=[],d=[],h=s.length,v=r||g(t||"*",a.nodeType?[a]:a,[]),y=!e||!r&&t?v:m(v,p,e,a,u),x=n?o||(r?e:h||i)?[]:s:y;if(n&&n(y,x,a,u),i)for(l=m(x,d),i(l,[],a,u),c=l.length;c--;)(f=l[c])&&(x[d[c]]=!(y[d[c]]=f));if(r){if(o||e){if(o){for(l=[],c=x.length;c--;)(f=x[c])&&l.push(y[c]=f);o(null,x=[],l,u)}for(c=x.length;c--;)(f=x[c])&&(l=o?ee(r,f):p[c])>-1&&(r[l]=!(s[l]=f))}}else x=m(x===s?x.splice(h,x.length):x),o?o(null,s,x,u):K.apply(s,x)})}function y(e){for(var t,n,r,i=e.length,o=T.relative[e[0].type],s=o||T.relative[" "],a=o?1:0,u=d(function(e){return e===t},s,!0),l=d(function(e){return ee(t,e)>-1},s,!0),c=[function(e,n,r){var i=!o&&(r||n!==D)||((t=n).nodeType?u(e,n,r):l(e,n,r));return t=null,i}];i>a;a++)if(n=T.relative[e[a].type])c=[d(h(c),n)];else{if(n=T.filter[e[a].type].apply(null,e[a].matches),n[W]){for(r=++a;i>r&&!T.relative[e[r].type];r++);return v(a>1&&h(c),a>1&&p(e.slice(0,a-1).concat({value:" "===e[a-2].type?"*":""})).replace(ae,"$1"),n,r>a&&y(e.slice(a,r)),i>r&&y(e=e.slice(r)),i>r&&p(e))}c.push(n)}return h(c)}function x(e,n){var i=n.length>0,o=e.length>0,s=function(r,s,a,u,l){var c,f,p,d=0,h="0",g=r&&[],v=[],y=D,x=r||o&&T.find.TAG("*",l),b=$+=null==y?1:Math.random()||.1,w=x.length;for(l&&(D=s===q||s||l);h!==w&&null!=(c=x[h]);h++){if(o&&c){for(f=0,s||c.ownerDocument===q||(L(c),a=!O);p=e[f++];)if(p(c,s||q,a)){u.push(c);break}l&&($=b)}i&&((c=!p&&c)&&d--,r&&g.push(c))}if(d+=h,i&&h!==d){for(f=0;p=n[f++];)p(g,v,s,a);if(r){if(d>0)for(;h--;)g[h]||v[h]||(v[h]=Q.call(u));v=m(v)}K.apply(u,v),l&&!r&&v.length>0&&d+n.length>1&&t.uniqueSort(u)}return l&&($=b,D=y),g};return i?r(s):s}var b,w,T,C,k,E,N,S,D,j,A,L,q,H,O,F,P,R,M,W="sizzle"+1*new Date,I=e.document,$=0,B=0,_=n(),X=n(),z=n(),U=function(e,t){return e===t&&(A=!0),0},V=1<<31,Y={}.hasOwnProperty,G=[],Q=G.pop,J=G.push,K=G.push,Z=G.slice,ee=function(e,t){for(var n=0,r=e.length;r>n;n++)if(e[n]===t)return n;return-1},te="checked|selected|async|autofocus|autoplay|controls|defer|disabled|hidden|ismap|loop|multiple|open|readonly|required|scoped",ne="[\\x20\\t\\r\\n\\f]",re="(?:\\\\.|[\\w-]|[^\\x00-\\xa0])+",ie="\\["+ne+"*("+re+")(?:"+ne+"*([*^$|!~]?=)"+ne+"*(?:'((?:\\\\.|[^\\\\'])*)'|\"((?:\\\\.|[^\\\\\"])*)\"|("+re+"))|)"+ne+"*\\]",oe=":("+re+")(?:\\((('((?:\\\\.|[^\\\\'])*)'|\"((?:\\\\.|[^\\\\\"])*)\")|((?:\\\\.|[^\\\\()[\\]]|"+ie+")*)|.*)\\)|)",se=new RegExp(ne+"+","g"),ae=new RegExp("^"+ne+"+|((?:^|[^\\\\])(?:\\\\.)*)"+ne+"+$","g"),ue=new RegExp("^"+ne+"*,"+ne+"*"),le=new RegExp("^"+ne+"*([>+~]|"+ne+")"+ne+"*"),ce=new RegExp("="+ne+"*([^\\]'\"]*?)"+ne+"*\\]","g"),fe=new RegExp(oe),pe=new RegExp("^"+re+"$"),de={ID:new RegExp("^#("+re+")"),CLASS:new RegExp("^\\.("+re+")"),TAG:new RegExp("^("+re+"|[*])"),ATTR:new RegExp("^"+ie),PSEUDO:new RegExp("^"+oe),CHILD:new RegExp("^:(only|first|last|nth|nth-last)-(child|of-type)(?:\\("+ne+"*(even|odd|(([+-]|)(\\d*)n|)"+ne+"*(?:([+-]|)"+ne+"*(\\d+)|))"+ne+"*\\)|)","i"),bool:new RegExp("^(?:"+te+")$","i"),needsContext:new RegExp("^"+ne+"*[>+~]|:(even|odd|eq|gt|lt|nth|first|last)(?:\\("+ne+"*((?:-\\d)?\\d*)"+ne+"*\\)|)(?=[^-]|$)","i")},he=/^(?:input|select|textarea|button)$/i,ge=/^h\d$/i,me=/^[^{]+\{\s*\[native \w/,ve=/^(?:#([\w-]+)|(\w+)|\.([\w-]+))$/,ye=/[+~]/,xe=/'|\\/g,be=new RegExp("\\\\([\\da-f]{1,6}"+ne+"?|("+ne+")|.)","ig"),we=function(e,t,n){var r="0x"+t-65536;return r!==r||n?t:0>r?String.fromCharCode(r+65536):String.fromCharCode(r>>10|55296,1023&r|56320)},Te=function(){L()};try{K.apply(G=Z.call(I.childNodes),I.childNodes),G[I.childNodes.length].nodeType}catch(Ce){K={apply:G.length?function(e,t){J.apply(e,Z.call(t))}:function(e,t){for(var n=e.length,r=0;e[n++]=t[r++];);e.length=n-1}}}w=t.support={},k=t.isXML=function(e){var t=e&&(e.ownerDocument||e).documentElement;return t?"HTML"!==t.nodeName:!1},L=t.setDocument=function(e){var t,n,r=e?e.ownerDocument||e:I;return r!==q&&9===r.nodeType&&r.documentElement?(q=r,H=q.documentElement,O=!k(q),(n=q.defaultView)&&n.top!==n&&(n.addEventListener?n.addEventListener("unload",Te,!1):n.attachEvent&&n.attachEvent("onunload",Te)),w.attributes=i(function(e){return e.className="i",!e.getAttribute("className")}),w.getElementsByTagName=i(function(e){return e.appendChild(q.createComment("")),!e.getElementsByTagName("*").length}),w.getElementsByClassName=me.test(q.getElementsByClassName),w.getById=i(function(e){return H.appendChild(e).id=W,!q.getElementsByName||!q.getElementsByName(W).length}),w.getById?(T.find.ID=function(e,t){if("undefined"!=typeof t.getElementById&&O){var n=t.getElementById(e);return n?[n]:[]}},T.filter.ID=function(e){var t=e.replace(be,we);return function(e){return e.getAttribute("id")===t}}):(delete T.find.ID,T.filter.ID=function(e){var t=e.replace(be,we);return function(e){var n="undefined"!=typeof e.getAttributeNode&&e.getAttributeNode("id");return n&&n.value===t}}),T.find.TAG=w.getElementsByTagName?function(e,t){return"undefined"!=typeof t.getElementsByTagName?t.getElementsByTagName(e):w.qsa?t.querySelectorAll(e):void 0}:function(e,t){var n,r=[],i=0,o=t.getElementsByTagName(e);if("*"===e){for(;n=o[i++];)1===n.nodeType&&r.push(n);return r}return o},T.find.CLASS=w.getElementsByClassName&&function(e,t){return"undefined"!=typeof t.getElementsByClassName&&O?t.getElementsByClassName(e):void 0},P=[],F=[],(w.qsa=me.test(q.querySelectorAll))&&(i(function(e){H.appendChild(e).innerHTML="<a id='"+W+"'></a><select id='"+W+"-\r\\' msallowcapture=''><option selected=''></option></select>",e.querySelectorAll("[msallowcapture^='']").length&&F.push("[*^$]="+ne+"*(?:''|\"\")"),e.querySelectorAll("[selected]").length||F.push("\\["+ne+"*(?:value|"+te+")"),e.querySelectorAll("[id~="+W+"-]").length||F.push("~="),e.querySelectorAll(":checked").length||F.push(":checked"),e.querySelectorAll("a#"+W+"+*").length||F.push(".#.+[+~]")}),i(function(e){var t=q.createElement("input");t.setAttribute("type","hidden"),e.appendChild(t).setAttribute("name","D"),e.querySelectorAll("[name=d]").length&&F.push("name"+ne+"*[*^$|!~]?="),e.querySelectorAll(":enabled").length||F.push(":enabled",":disabled"),e.querySelectorAll("*,:x"),F.push(",.*:")})),(w.matchesSelector=me.test(R=H.matches||H.webkitMatchesSelector||H.mozMatchesSelector||H.oMatchesSelector||H.msMatchesSelector))&&i(function(e){w.disconnectedMatch=R.call(e,"div"),R.call(e,"[s!='']:x"),P.push("!=",oe)}),F=F.length&&new RegExp(F.join("|")),P=P.length&&new RegExp(P.join("|")),t=me.test(H.compareDocumentPosition),M=t||me.test(H.contains)?function(e,t){var n=9===e.nodeType?e.documentElement:e,r=t&&t.parentNode;return e===r||!(!r||1!==r.nodeType||!(n.contains?n.contains(r):e.compareDocumentPosition&&16&e.compareDocumentPosition(r)))}:function(e,t){if(t)for(;t=t.parentNode;)if(t===e)return!0;return!1},U=t?function(e,t){if(e===t)return A=!0,0;var n=!e.compareDocumentPosition-!t.compareDocumentPosition;return n?n:(n=(e.ownerDocument||e)===(t.ownerDocument||t)?e.compareDocumentPosition(t):1,1&n||!w.sortDetached&&t.compareDocumentPosition(e)===n?e===q||e.ownerDocument===I&&M(I,e)?-1:t===q||t.ownerDocument===I&&M(I,t)?1:j?ee(j,e)-ee(j,t):0:4&n?-1:1)}:function(e,t){if(e===t)return A=!0,0;var n,r=0,i=e.parentNode,o=t.parentNode,a=[e],u=[t];if(!i||!o)return e===q?-1:t===q?1:i?-1:o?1:j?ee(j,e)-ee(j,t):0;if(i===o)return s(e,t);for(n=e;n=n.parentNode;)a.unshift(n);for(n=t;n=n.parentNode;)u.unshift(n);for(;a[r]===u[r];)r++;return r?s(a[r],u[r]):a[r]===I?-1:u[r]===I?1:0},q):q},t.matches=function(e,n){return t(e,null,null,n)},t.matchesSelector=function(e,n){if((e.ownerDocument||e)!==q&&L(e),n=n.replace(ce,"='$1']"),w.matchesSelector&&O&&!z[n+" "]&&(!P||!P.test(n))&&(!F||!F.test(n)))try{var r=R.call(e,n);if(r||w.disconnectedMatch||e.document&&11!==e.document.nodeType)return r}catch(i){}return t(n,q,null,[e]).length>0},t.contains=function(e,t){return(e.ownerDocument||e)!==q&&L(e),M(e,t)},t.attr=function(e,t){(e.ownerDocument||e)!==q&&L(e);var n=T.attrHandle[t.toLowerCase()],r=n&&Y.call(T.attrHandle,t.toLowerCase())?n(e,t,!O):void 0;return void 0!==r?r:w.attributes||!O?e.getAttribute(t):(r=e.getAttributeNode(t))&&r.specified?r.value:null},t.error=function(e){throw new Error("Syntax error, unrecognized expression: "+e)},t.uniqueSort=function(e){var t,n=[],r=0,i=0;if(A=!w.detectDuplicates,j=!w.sortStable&&e.slice(0),e.sort(U),A){for(;t=e[i++];)t===e[i]&&(r=n.push(i));for(;r--;)e.splice(n[r],1)}return j=null,e},C=t.getText=function(e){var t,n="",r=0,i=e.nodeType;if(i){if(1===i||9===i||11===i){if("string"==typeof e.textContent)return e.textContent;for(e=e.firstChild;e;e=e.nextSibling)n+=C(e)}else if(3===i||4===i)return e.nodeValue}else for(;t=e[r++];)n+=C(t);return n},T=t.selectors={cacheLength:50,createPseudo:r,match:de,attrHandle:{},find:{},relative:{">":{dir:"parentNode",first:!0}," ":{dir:"parentNode"},"+":{dir:"previousSibling",first:!0},"~":{dir:"previousSibling"}},preFilter:{ATTR:function(e){return e[1]=e[1].replace(be,we),e[3]=(e[3]||e[4]||e[5]||"").replace(be,we),"~="===e[2]&&(e[3]=" "+e[3]+" "),e.slice(0,4)},CHILD:function(e){return e[1]=e[1].toLowerCase(),"nth"===e[1].slice(0,3)?(e[3]||t.error(e[0]),e[4]=+(e[4]?e[5]+(e[6]||1):2*("even"===e[3]||"odd"===e[3])),e[5]=+(e[7]+e[8]||"odd"===e[3])):e[3]&&t.error(e[0]),e},PSEUDO:function(e){var t,n=!e[6]&&e[2];return de.CHILD.test(e[0])?null:(e[3]?e[2]=e[4]||e[5]||"":n&&fe.test(n)&&(t=E(n,!0))&&(t=n.indexOf(")",n.length-t)-n.length)&&(e[0]=e[0].slice(0,t),e[2]=n.slice(0,t)),e.slice(0,3))}},filter:{TAG:function(e){var t=e.replace(be,we).toLowerCase();return"*"===e?function(){return!0}:function(e){return e.nodeName&&e.nodeName.toLowerCase()===t}},CLASS:function(e){var t=_[e+" "];return t||(t=new RegExp("(^|"+ne+")"+e+"("+ne+"|$)"))&&_(e,function(e){return t.test("string"==typeof e.className&&e.className||"undefined"!=typeof e.getAttribute&&e.getAttribute("class")||"")})},ATTR:function(e,n,r){return function(i){var o=t.attr(i,e);return null==o?"!="===n:n?(o+="","="===n?o===r:"!="===n?o!==r:"^="===n?r&&0===o.indexOf(r):"*="===n?r&&o.indexOf(r)>-1:"$="===n?r&&o.slice(-r.length)===r:"~="===n?(" "+o.replace(se," ")+" ").indexOf(r)>-1:"|="===n?o===r||o.slice(0,r.length+1)===r+"-":!1):!0}},CHILD:function(e,t,n,r,i){var o="nth"!==e.slice(0,3),s="last"!==e.slice(-4),a="of-type"===t;return 1===r&&0===i?function(e){return!!e.parentNode}:function(t,n,u){var l,c,f,p,d,h,g=o!==s?"nextSibling":"previousSibling",m=t.parentNode,v=a&&t.nodeName.toLowerCase(),y=!u&&!a,x=!1;if(m){if(o){for(;g;){for(p=t;p=p[g];)if(a?p.nodeName.toLowerCase()===v:1===p.nodeType)return!1;h=g="only"===e&&!h&&"nextSibling"}return!0}if(h=[s?m.firstChild:m.lastChild],s&&y){for(p=m,f=p[W]||(p[W]={}),c=f[p.uniqueID]||(f[p.uniqueID]={}),l=c[e]||[],d=l[0]===$&&l[1],x=d&&l[2],p=d&&m.childNodes[d];p=++d&&p&&p[g]||(x=d=0)||h.pop();)if(1===p.nodeType&&++x&&p===t){c[e]=[$,d,x];break}}else if(y&&(p=t,f=p[W]||(p[W]={}),c=f[p.uniqueID]||(f[p.uniqueID]={}),l=c[e]||[],d=l[0]===$&&l[1],x=d),x===!1)for(;(p=++d&&p&&p[g]||(x=d=0)||h.pop())&&((a?p.nodeName.toLowerCase()!==v:1!==p.nodeType)||!++x||(y&&(f=p[W]||(p[W]={}),c=f[p.uniqueID]||(f[p.uniqueID]={}),c[e]=[$,x]),p!==t)););return x-=i,x===r||x%r===0&&x/r>=0}}},PSEUDO:function(e,n){var i,o=T.pseudos[e]||T.setFilters[e.toLowerCase()]||t.error("unsupported pseudo: "+e);return o[W]?o(n):o.length>1?(i=[e,e,"",n],T.setFilters.hasOwnProperty(e.toLowerCase())?r(function(e,t){for(var r,i=o(e,n),s=i.length;s--;)r=ee(e,i[s]),e[r]=!(t[r]=i[s])}):function(e){return o(e,0,i)}):o}},pseudos:{not:r(function(e){var t=[],n=[],i=N(e.replace(ae,"$1"));return i[W]?r(function(e,t,n,r){for(var o,s=i(e,null,r,[]),a=e.length;a--;)(o=s[a])&&(e[a]=!(t[a]=o))}):function(e,r,o){return t[0]=e,i(t,null,o,n),t[0]=null,!n.pop()}}),has:r(function(e){return function(n){return t(e,n).length>0}}),contains:r(function(e){return e=e.replace(be,we),function(t){return(t.textContent||t.innerText||C(t)).indexOf(e)>-1}}),lang:r(function(e){return pe.test(e||"")||t.error("unsupported lang: "+e),e=e.replace(be,we).toLowerCase(),function(t){var n;do if(n=O?t.lang:t.getAttribute("xml:lang")||t.getAttribute("lang"))return n=n.toLowerCase(),n===e||0===n.indexOf(e+"-");while((t=t.parentNode)&&1===t.nodeType);return!1}}),target:function(t){var n=e.location&&e.location.hash;return n&&n.slice(1)===t.id},root:function(e){return e===H},focus:function(e){return e===q.activeElement&&(!q.hasFocus||q.hasFocus())&&!!(e.type||e.href||~e.tabIndex)},enabled:function(e){return e.disabled===!1},disabled:function(e){return e.disabled===!0},checked:function(e){var t=e.nodeName.toLowerCase();return"input"===t&&!!e.checked||"option"===t&&!!e.selected},selected:function(e){return e.parentNode&&e.parentNode.selectedIndex,e.selected===!0},empty:function(e){for(e=e.firstChild;e;e=e.nextSibling)if(e.nodeType<6)return!1;return!0},parent:function(e){return!T.pseudos.empty(e)},header:function(e){return ge.test(e.nodeName)},input:function(e){return he.test(e.nodeName)},button:function(e){var t=e.nodeName.toLowerCase();return"input"===t&&"button"===e.type||"button"===t},text:function(e){var t;return"input"===e.nodeName.toLowerCase()&&"text"===e.type&&(null==(t=e.getAttribute("type"))||"text"===t.toLowerCase())},first:l(function(){return[0]}),last:l(function(e,t){return[t-1]}),eq:l(function(e,t,n){return[0>n?n+t:n]}),even:l(function(e,t){for(var n=0;t>n;n+=2)e.push(n);return e}),odd:l(function(e,t){for(var n=1;t>n;n+=2)e.push(n);return e;
