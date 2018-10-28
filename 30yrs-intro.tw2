@@ -14,6 +14,7 @@ Twee2::build_config.story_ifid = 'fededa0d-8f39-41f3-855e-f9f9cc042709'
 2. [[the massacre->chapter2]]
 3. [[the compact->chapter3]]
 4. [[the aftermath->chapter4]]
+5. [[the sermon->chapter5]]
 
 ::StoryIncludes
 scripts.tw2
@@ -22,3 +23,4 @@ chapter1.tw2
 chapter2.tw2
 chapter3.tw2
 chapter4.tw2
+chapter5.tw2
