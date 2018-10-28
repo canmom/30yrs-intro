@@ -6,6 +6,8 @@ Twee2::build_config.story_format = 'Snowman'
 Twee2::build_config.story_ifid = 'fededa0d-8f39-41f3-855e-f9f9cc042709'
 
 ::SplashPage [allatonce]
+<img alt="An illustration of St. Enaree, floating with her dick out, and the protagonist Judith, kneeling. Around them various combatants are frozen in a field of tents." src="splash.png">
+
 # Thirty Years
 
 *A fantasy of womens' insurrection at the dawn of capital.*
